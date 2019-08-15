@@ -3,5 +3,6 @@ rotation.txt
 
 # ignore map files
 region/
+data/
 map.png
 level.dat
