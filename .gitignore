@@ -1,2 +1,7 @@
 # ignore rotation file
 rotation.txt
+
+# ignore map files
+region/
+map.png
+level.dat
