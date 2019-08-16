@@ -5,4 +5,4 @@ rotation.txt
 region/
 data/
 map.png
-level.dat
+*.dat
