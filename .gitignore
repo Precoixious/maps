@@ -1,5 +1,5 @@
-# ignore rotation file
-rotation.txt
+# ignore rotation files
+*.txt
 
 # ignore map files
 region/
