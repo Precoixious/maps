@@ -6,3 +6,6 @@ region/
 data/
 map.png
 *.dat
+
+# misc
+Thumbs.db
