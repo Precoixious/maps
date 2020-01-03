@@ -9,62 +9,34 @@
 <contributors>
     <contributor uuid="41373965-b60a-40d5-8fad-72e61d951ea2" contribution="Aesthetics and spawn kit help"/> <!-- Rokosnocone -->
 </contributors>
-<if ranked="true">
-    <terrain world="ranked"/>
-    <time>30m</time>
-    <maxbuildheight>32</maxbuildheight>
-    <teams>
-        <team color="blue" min="8" max="10">Blue</team>
-        <team color="dark red" min="8" max="10">Red</team>
-    </teams>
-    <spawns>
+<terrain world="normal"/>
+<maxbuildheight>32</maxbuildheight>
+<teams>
+    <team color="blue" max="16" max-overfill="20">Blue</team>
+    <team color="dark red" max="16" max-overfill="20">Red</team>
+</teams>
+<spawns>
+    <spawns kit="blue">
         <spawn team="blue" kit="blue" yaw="0">
-            <point>0,249,-83</point>
+            <cuboid min="-1,9,-76" max="1,9,-73"/>
         </spawn>
+    </spawns>
+    <spawns kit="red">
         <spawn team="red" kit="red" yaw="180">
-            <point>0,249,84</point>
+            <cuboid min="-1,9,73" max="1,9,76"/>
         </spawn>
     </spawns>
-    <regions>
-        <union name="wool-rooms">
-            <union name="blue-wool-rooms">
-                <rectangle name="green-room" min="35,61" max="15,74"/>
-                <mirror name="cyan-room" region="green-room" origin="0,0,0.5" normal="-1,0,0"/>
-            </union>
-        <mirror name="red-wool-rooms" region="blue-wool-rooms" origin="0,0,0.5" normal="0,0,1"/>
-        </union>
-    </regions>
-</if>
-<if ranked="false">
-    <terrain world="normal"/>
-    <maxbuildheight>32</maxbuildheight>
-    <teams>
-        <team color="blue" max="16" max-overfill="20">Blue</team>
-        <team color="dark red" max="16" max-overfill="20">Red</team>
-    </teams>
-    <spawns>
-        <spawns kit="blue">
-            <spawn team="blue" kit="blue" yaw="0">
-                <cuboid min="-1,9,-76" max="1,9,-73"/>
-            </spawn>
-        </spawns>
-        <spawns kit="red">
-            <spawn team="red" kit="red" yaw="180">
-                <cuboid min="-1,9,73" max="1,9,76"/>
-            </spawn>
-        </spawns>
-    </spawns>
-    <regions>
-        <union name="blue-wool-rooms">
-            <cuboid name="green-room" min="17,0,66" max="37,256,79"/>
-            <cuboid name="cyan-room" min="-17,0,66" max="-37,256,79"/>
-        </union>
-        <union name="red-wool-rooms">
-            <cuboid name="purple-room" min="-17,0,-65" max="-37,256,-78"/>
-            <cuboid name="yellow-room" min="17,0,-65" max="37,256,-78"/>
-        </union>
-    </regions>
-</if>
+</spawns>
+<regions>
+    <union name="blue-wool-rooms">
+        <cuboid name="green-room" min="17,0,66" max="37,256,79"/>
+        <cuboid name="cyan-room" min="-17,0,66" max="-37,256,79"/>
+    </union>
+    <union name="red-wool-rooms">
+        <cuboid name="purple-room" min="-17,0,-65" max="-37,256,-78"/>
+        <cuboid name="yellow-room" min="17,0,-65" max="37,256,-78"/>
+    </union>
+</regions>
 <spawns>
     <default yaw="90">
         <cylinder base="-50,59,0" radius="3" height="0"/>

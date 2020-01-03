@@ -13,18 +13,10 @@
 <tnt>
     <licensing>off</licensing>
 </tnt>
-<if ranked="true">
-    <teams>
-        <team color="blue" min="7" max="8">Blue</team>
-        <team color="dark red" min="7" max="8">Red</team>
-    </teams>
-</if>
-<unless ranked="true">
-    <teams>
-        <team color="blue" max="16">Blue</team>
-        <team color="dark red" max="16">Red</team>
-    </teams>
-</unless>
+<teams>
+    <team color="blue" max="16">Blue</team>
+    <team color="dark red" max="16">Red</team>
+</teams>
 <filters>
     <filter name="only-blue">
         <team>blue</team>

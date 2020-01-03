@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map proto="1.4.1">
+<map proto="1.4.0">
 <name>Coral Reef</name>
 <version>1.2.0</version>
 <objective>Destroy the monument.</objective>
@@ -101,4 +101,4 @@
     <tool>bow</tool>
     <tool>iron axe</tool>
 </toolrepair>
-</map> 
+</map>
