@@ -4,7 +4,6 @@
 # ignore map files
 region/
 data/
-map.png
 *.dat
 
 # misc
