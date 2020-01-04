@@ -211,12 +211,7 @@
 <killreward>
     <item>golden apple</item>
     <item amount="16">arrow</item>
-    <kill-reward>
-        <filter>
-            <kill-streak count="2" repeat="true"/>
-        </filter>
-        <item damage="4" material="ink sack"/>
-    </kill-reward>
+    <item damage="4" material="ink sack"/>
 </killreward>
 <toolrepair>
     <tool>iron sword</tool>
