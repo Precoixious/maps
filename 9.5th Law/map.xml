@@ -3,7 +3,7 @@
 <include src="tutorial.xml"/>
 <name>9.5th Law</name>
 <version>1.1</version>
-<objective>Capture both wools for your team.</objective>
+<objective>Capture the wool for your team.</objective>
 <authors>
     <author uuid="2ca8072f-74be-4798-85b8-bbce03aa91af"/> <!-- Tywnis -->
 </authors>
