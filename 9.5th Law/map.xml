@@ -66,6 +66,7 @@
     <item>log</item>
     <item>wood</item>
     <item>glass</item>
+    <item>cooked fish</item>
 </itemremove>
 <wools team="red">
     <wool color="cyan">
