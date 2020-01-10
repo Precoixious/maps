@@ -33,14 +33,15 @@
         <item slot="0">iron sword</item>
         <item slot="1">bow</item>
         <item slot="2" enchantment="durability:2;dig speed:3">iron pickaxe</item>
-        <item slot="3" amount="64" damage="1">log</item>
-        <item slot="4" amount="32">glass</item>
-        <item slot="5" amount="32">snow ball</item>
-        <item slot="6" amount="64">cooked beef</item>
-        <item slot="7">golden apple</item>
+        <item slot="3">iron axe</item>
+        <item slot="4" amount="64" damage="1">log</item>
+        <item slot="5" amount="32">glass</item>
+        <item slot="6" amount="32">snow ball</item>
+        <item slot="7" amount="64">cooked beef</item>
+        <item slot="8">golden apple</item>
         <potion duration="5" amplifier="3">damage resistance</potion>
         <potion duration="2" amplifier="1">heal</potion>
-        <item slot="8" amount="64">arrow</item>
+        <item slot="28" amount="64">arrow</item>
     </kit>
 
     <kit name="red" parents="spawn-kit">
@@ -217,6 +218,7 @@
     <tool>iron sword</tool>
     <tool>iron pickaxe</tool>
     <tool>bow</tool>
+    <tool>iron axe</tool>
 </toolrepair>
 <itemremove>
     <item>snow ball</item>
