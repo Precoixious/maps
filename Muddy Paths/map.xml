@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<map proto="1.4.2">
+<map proto="1.4.0">
 <name>Muddy Paths</name>
 <version>1.0.3</version>
 <objective>Desroy and leak the enemy's core.</objective>
@@ -90,7 +90,7 @@
 	<kit id="spawn">
 		<item slot="0" material="stone sword" unbreakable="true"/>
 		<item slot="1" material="bow">
-			<enchantment level="1">arrow_infinite</enchantment> 
+			<enchantment level="1">arrow_infinite</enchantment>
 		</item>
 		<item slot="28" material="arrow" unbreakable="true"/>
 		<item slot="2" material="diamond pickaxe"/>
@@ -207,8 +207,8 @@
 	</union>
 	<cuboid id="middle-sky" min="6.0,26.0,-26.0" max="-66.0,255.0,77.0"/>
 	<union id="enchantment-tables">
-		<block>-12,16,-110</block> 
-		<block>-49,16,160</block> 
+		<block>-12,16,-110</block>
+		<block>-49,16,160</block>
 	</union>
 	<union id="spider-spawners">
 		<block>-46,8,80</block>

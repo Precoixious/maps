@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<map proto="1.4.1">
+<map proto="1.4.0">
 <name>Aequabilis</name>
 <version>1.0.2</version>
 <objective>Capture and place both of the enemies wools.</objective>
@@ -178,7 +178,7 @@
 	<tool>bow</tool>
 	<tool>iron pickaxe</tool>
 	<tool>iron axe</tool>
-</toolrepair>	
+</toolrepair>
 <itemremove>
 	<item>arrow</item>
 	<item>log</item>
