@@ -10,8 +10,8 @@
     <contributor contribution="Tourney Dude">Reshif</contributor>
 </contributors>
 <teams>
-    <team color="gold" min="7" max="10">Orange</team>
-    <team color="dark aqua" min="7" max="10">Cyan</team>
+    <team color="gold" max="10">Orange</team>
+    <team color="dark aqua" max="10">Cyan</team>
 </teams>
 <kits>
     <kit name="spawn" potion-particles="false">
