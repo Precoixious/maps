@@ -19,16 +19,28 @@
     <team color="dark red" max="32">Red</team>
 </teams>
 <spawns>
-    <spawn team="blue" yaw="180">
+    <spawn team="blue" yaw="180" kit="spawn-kit">
         <cylinder base="-22.5,114,22.5" radius="2" height="0"/>
     </spawn>
-    <spawn team="red" yaw="0">
+    <spawn team="red" yaw="0" kit="spawn-kit">
         <cylinder base="-22.5,114,-81.5" radius="2" height="0"/>
     </spawn>
     <default yaw="-90">
         <cuboid min="37,157,-30" max="39,157,-28"/>
     </default>
 </spawns>
+<kits>
+    <kit name="spawn-kit">
+        <item slot="0">iron_sword</item>
+        <item slot="1">bow</item>
+        <item slot="2">iron_pickaxe</item>
+        <item slot="3">iron axe</item>
+        <item slot="4" amount="64">pumpkin pie</item>
+        <item slot="5" amount="64">log 2</item>
+        <item slot="6" amount="64" damage="11">stained glass</item>
+        <item slot="28" amount="64">arrow</item>
+    </kit>
+</kits>
 <filters>
     <filter name="only-blue">
         <team>blue</team>
@@ -138,12 +150,16 @@
         <block>-62.5,134,-111.5</block>
     </wool>
 </wools>
+<killreward>
+    <item amount="16">arrow</item>
+</killreward>
 <itemremove>
     <item>obsidian</item>
     <item>step</item>
     <item>pumpkin pie</item>
-    <item>log</item>
+    <item>log 2</item>
     <item>stained glass</item>
+    <item>arrow</item>
 </itemremove>
 <toolrepair>
     <tool>iron sword</tool>
