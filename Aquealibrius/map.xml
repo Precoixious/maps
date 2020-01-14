@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <map proto="1.4.0">
 <name>Aequabilis</name>
-<version>1.0.2</version>
+<version>1.0.3</version>
 <objective>Capture and place both of the enemies wools.</objective>
 <!--Author-->
 <authors>
