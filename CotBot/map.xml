@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <map proto="1.3.0">
 <name>CotBot</name>
-<version>1.0.3</version>
+<version>1.0.4</version>
 <objective>Blitz : Eliminate the other team before 10 minutes is up</objective>
 <gamemode>blitz</gamemode>
 <authors>
@@ -14,10 +14,9 @@
     <team color="dark red" max="12">Cot</team>
     <team color="blue" max="12">Bot</team>
 </teams>
-<blitz>
+<score>
     <time>10m</time>
-    <lives>1</lives>
-</blitz>
+</score>
 <kits>
     <kit name="spawn">
         <item slot="0" unbreakable="true">wood sword</item>
