@@ -13,7 +13,7 @@
 <score>
     <kills>1</kills>
 </score>
-<players min="3" max="5" max-overfill="5" show-name-tags="false" />
+<players max="5" max-overfill="5" show-name-tags="false" />
 <respawn auto="true" />
 <spawns safe="true">
     <default kit="default-kit" region="default-spawn" yaw="0" />

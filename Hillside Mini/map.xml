@@ -14,7 +14,7 @@
     <kills>1</kills>
 </score>
 <time>5m</time>
-<players min="3" max="5" max-overfill="5" show-name-tags="true"/>
+<players max="5" max-overfill="5" show-name-tags="true"/>
 <spawns>
     <default kit="obs">
         <region yaw="90">
@@ -115,7 +115,7 @@
         <kit>
             <potion duration="3" amplifier="3">regeneration</potion>
             <potion duration="4" amplifier="2">speed</potion>
-        </kit>    
+        </kit>
             <item amount="8">cobblestone</item>
             <item amount="5" material="arrow"/>
     </kill-reward>
@@ -149,7 +149,7 @@
     <rule>
         <filter>
             <any>
-                <material>cobblestone</material>      
+                <material>cobblestone</material>
                 <material>brick</material>
                 <material>brick stairs</material>
                 <material damage="4">44</material>

@@ -33,7 +33,7 @@
     `3Kill other players to get `apotion `aeffects!
     </tip>
 </broadcasts>
-<players min="3" max="5" show-name-tags="false"/>
+<players max="5" show-name-tags="false"/>
 <spawns>
     <spawn kit="player" spread="true" safe="true">
       <regions angle="1,13,-1">
@@ -63,7 +63,7 @@
         <potion duration="oo">night vision</potion>
     </kit>
     <kit id="kill-1">
-        <effect duration="oo" amplifier="1">speed</effect>    
+        <effect duration="oo" amplifier="1">speed</effect>
     </kit>
     <kit id="kill-2">
         <effect duration="oo" amplifier="1">increase_damage</effect>

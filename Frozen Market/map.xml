@@ -13,7 +13,7 @@
     <rule>Fall damage is off.</rule>
 </rules>
 <time>5m</time>
-<players min="3" max="5" max-overfill="5" show-name-tags="false"/>
+<players max="5" max-overfill="5" show-name-tags="false"/>
 <spawns>
     <spawn kit="spawn-kit" spread="true">
         <regions>

@@ -21,7 +21,7 @@
 </score>
 <time>5m</time>
 <respawn delay="2s" blackout="false" />
-<players min="3" max="5" max-overfill="5" show-name-tags="false" colors="true" />
+<players max="5" max-overfill="5" show-name-tags="false" colors="true" />
 <rage />
 <projectiles>
     <projectile id="grenade" name="Arrow Launcher" projectile="Arrow" velocity="5.5" damage="17" throwable="false" click="both" cooldown="0.01" />
@@ -49,7 +49,6 @@
         <effect duration="1" amplifier="80">levitation</effect>
     </kit>
 </kits>
-​
 <flags>
     <post id="post" return-time="10s" respawn-time="5s">
         <block>630,98,-147</block>
