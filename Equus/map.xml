@@ -103,7 +103,7 @@ Take the enemy's wools located to either side of the enemy's base and place it i
                 <any>
                     <block>chest</block>
                     <block>workbench</block>
-                    <block>trap door</block>					
+                    <block>trap door</block>
                 </any>
             <team>blue</team>
             </all>
@@ -227,10 +227,10 @@ Take the enemy's wools located to either side of the enemy's base and place it i
         <block>-69,6,2</block>
     </wool>
     <wool team="blue" color="yellow">
-        <block>-219,6,2</block>
+        <block>-219,6,6</block>
     </wool>
     <wool team="blue" color="lime">
-        <block>-219,6,6</block>
+        <block>-219,6,2</block>
     </wool>
 </wools>
 <itemremove>
