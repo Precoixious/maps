@@ -4,7 +4,7 @@
 <version>1.3.6</version>
 <objective>Be the team with the least amount of deaths after 10 minutes.</objective>
 <authors>
-    <author uuid="6968cbde-c2b7-479c-a8da-f33f109f013b" contribution="XML"/> <!-- Brottweiler -->
+    <author uuid="177803b2-797c-4089-aae1-5702ca259e2c"/> <!-- Onsole, lack of original author -->
 </authors>
 <contributors>
     <contributor uuid="6968cbde-c2b7-479c-a8da-f33f109f013b" contribution="XML"/> <!-- Brottweiler -->
