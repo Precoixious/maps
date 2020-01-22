@@ -32,8 +32,8 @@
         <item slot="1" enchantment="arrow infinite:1">bow</item>
         <item slot="28" amount="1">arrow</item>
         <item slot="3" damage="8226">potion</item> <!-- potion of swiftness 2 -->
-        <effect duration="2">heal</potion>
-        <effect duration="3">damage resistance</potion>
+        <effect duration="2">heal</effect>
+        <effect duration="3">damage resistance</effect>
             <!--<effect duration="oo" amplifier="2">speed</effect>--> <!-- Use this instead of potion? -->
     </kit>
     <kit id="red" parents="spawn">
