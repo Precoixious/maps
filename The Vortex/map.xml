@@ -62,7 +62,7 @@
         <boots color="7FCC19" unbreakable="true">leather boots</boots>
     </kit>
 </kits>
-<spawns>
+<spawns safe="true">
     <spawn team="blues" kit="blue">
         <regions yaw="0">
             <cylinder base="0.5, 20, -70.5" radius="2.5" height="1"/>
