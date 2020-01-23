@@ -20,6 +20,7 @@
 <hunger>
     <depletion>off</depletion>
 </hunger>
+<timelock>on</timelock>
 <teams>
     <team id="blues" color="blue" max="16">Blue Team</team>
     <team id="reds" color="dark red" max="16">Red Team</team>
