@@ -77,11 +77,11 @@
 </regions>
 <playable>
     <region name="main-area"/>
-</playable><!-- Disable until fixed
+</playable>
 <modifybowprojectile>
     <projectile>Snowball</projectile>
-    <velocityMod>1</velocityMod>
-</modifybowprojectile>-->
+    <velocityMod>2.0</velocityMod>
+</modifybowprojectile>
 <kits>
     <kit name="spawn">
         <item slot="0" enchantment="durability:1">iron sword</item>
