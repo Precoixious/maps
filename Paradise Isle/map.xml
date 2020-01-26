@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <map proto="1.0.0">
 <name>Paradise Isle</name>
-<version>2.0.3</version>
+<version>2.0.4</version>
 <objective>Destroy the enemy team's core on top of their tower</objective>
 <phase>development</phase>
 <authors>
@@ -48,7 +48,7 @@
 <regions>
     <apply block="deny-all" message="You may not build outside the playing area!">
         <negative name="playable-inverse">
-            <cuboid min="59,0,-271" max="-83,70,-780"/>
+            <rectangle min="59,-271" max="-83,-780"/>
         </negative>
     </apply>
 </regions>
