@@ -11,7 +11,6 @@
     <author uuid="98a4a81e-4393-4041-8d43-40a0196b5832"/> <!-- Thungon -->
     <author uuid="0ae466ff-d3a1-4307-a323-89043643ace5"/> <!-- GammaRay_89 -->
 </authors>
-<terrain world="normal"/>
 <teams>
     <team color="blue" max="24">Blue</team>
     <team color="dark red" max="24">Red</team>
