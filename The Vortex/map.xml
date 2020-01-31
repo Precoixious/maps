@@ -90,6 +90,18 @@
         </regions>
     </default>
 </spawns>
+<filters>
+    <not id="no-void">
+        <void/>
+    </not>
+</filters>
+<regions>
+    <apply block="no-void" message="You may not modify the void area!">
+        <negative>
+            <rectangle id="playing-field" min="75,-75" max="-75,75"/>
+        </negative>
+    </apply>
+</regions>
 <kill-rewards>
     <kill-reward>
         <item>golden apple</item>
