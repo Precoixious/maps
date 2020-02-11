@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <map proto="1.0.0">
 <name>Spaceship Battles II</name>
-<version>1.1.6</version>
+<version>1.1.7</version>
 <objective>Leak lava from the enemy's obsidian core and destroy the enemy's Comm Tower made of coal ore.</objective>
 <authors>
     <author uuid="73711d58-d786-4007-8c95-c93b1311de1a"/> <!-- Oversoul96 -->
@@ -66,7 +66,6 @@
     <item>shears</item>
     <item>obsidian</item>
     <item>coal</item>
-    <item>bread</item>
     <item>iron chestplate</item>
 </itemremove>
 </map>
