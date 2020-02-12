@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <map proto="1.4.0">
 <name>Desert Country</name>
-<version>1.0.5</version>
+<version>1.0.6</version>
 <objective>Capture the wools located on the opposite side.</objective>
 <!-- Map authors & contributors. -->
 <authors>
@@ -16,7 +16,7 @@
 </contributors>
 <gamemode>ctw</gamemode>
 <broadcasts>
-    <tip after="2s">`7You will get `b8 wood`7 and `b10 arrows `7every kill</tip>
+    <tip after="2s">`7You will get `b8 wood`7 and `b1 golden apple `7every kill</tip>
 </broadcasts>
 <teams>
     <team id="green-team" color="green" max="20" max-overfill="25">Green</team>
@@ -42,17 +42,18 @@
 <kits>
     <kit id="spawn" force="true">
         <item slot="0" unbreakable="true" material="stone sword"/>
-        <item slot="1" unbreakable="true" material="bow"/>
+        <item slot="1" unbreakable="true" enchantment="infinity" material="bow"/>
         <item slot="2" unbreakable="true" material="iron pickaxe"/>
         <item slot="3" unbreakable="true" material="stone axe"/>
         <item slot="4" unbreakable="true" material="shears"/>
         <item slot="5" amount="64" material="grilled pork"/>
-        <item slot="6" amount="40" material="red sandstone"/>
+        <item slot="6" amount="64" material="red sandstone"/>
         <item slot="7" amount="16" damage="3" material="log"/>
-        <item slot="17" amount="64" material="arrow"/>
-        <potion amplifier="100" duration="8">heal</potion>
-        <potion amplifier="100" duration="8">damage resistance</potion>
-        <potion amplifier="100" duration="8">regeneration</potion>
+        <item slot="28" material="arrow"/>
+        <item slot="33" amount="64" material="red sandstone"/>
+        <potion amplifier="100" duration="5">heal</potion>
+        <potion amplifier="100" duration="5">damage resistance</potion>
+        <potion amplifier="100" duration="5">regeneration</potion>
     </kit>
     <kit id="green-kit" parents="spawn">
         <helmet color="667F33" material="leather helmet"/>
@@ -79,7 +80,7 @@
 <kill-rewards>
     <kill-reward>
         <item amount="8" damage="3" material="wood"/>
-        <item amount="10" material="arrow"/>
+        <item material="golden apple"/>
     </kill-reward>
 </kill-rewards>
 <filters>
@@ -183,7 +184,7 @@
     <item>stone axe</item>
 </itemremove>
 <timelock>on</timelock>
-<maxbuildheight>23</maxbuildheight>
+<maxbuildheight>30</maxbuildheight>
 <renewables>
     <renewable rate="1.5" grow="false" particles="true" sound="true" avoid-entites="true" region="Iron">
         <renew-filter>
