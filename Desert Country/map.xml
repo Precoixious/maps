@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <map proto="1.4.0">
 <name>Desert Country</name>
-<version>1.0.6</version>
+<version>1.0.7</version>
 <objective>Capture the wools located on the opposite side.</objective>
 <!-- Map authors & contributors. -->
 <authors>
@@ -50,7 +50,7 @@
         <item slot="6" amount="64" material="red sandstone"/>
         <item slot="7" amount="16" damage="3" material="log"/>
         <item slot="28" material="arrow"/>
-        <item slot="33" amount="64" material="red sandstone"/>
+        <item slot="33" amount="32" material="red sandstone"/>
         <potion amplifier="100" duration="5">heal</potion>
         <potion amplifier="100" duration="5">damage resistance</potion>
         <potion amplifier="100" duration="5">regeneration</potion>
@@ -184,7 +184,7 @@
     <item>stone axe</item>
 </itemremove>
 <timelock>on</timelock>
-<maxbuildheight>30</maxbuildheight>
+<maxbuildheight>25</maxbuildheight>
 <renewables>
     <renewable rate="1.5" grow="false" particles="true" sound="true" avoid-entites="true" region="Iron">
         <renew-filter>
