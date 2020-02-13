@@ -19,7 +19,7 @@
     <time>10m</time>
 </score>
 <rules>
-    <rule>Switching/exchanging classses or items within a class is illegal.</rule>
+    <rule>Switching/exchanging classes or items within a class is illegal.</rule>
 </rules>
 <teams>
     <team color="blue" max="65" show-name-tags="allies">Blue</team>
