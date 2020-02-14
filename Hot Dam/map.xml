@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <map proto="1.0.0">
 <name>Hot Dam</name>
-<version>1.2</version>
+<version>1.3</version>
 <objective>Leak lava from the enemy's obsidian core onto the dam.</objective>
 <authors>
     <author uuid="00c06fa6-1c53-4634-931a-929efd8a52df"/> <!-- Nadastorm -->
@@ -56,15 +56,25 @@
     </apply>
 </regions>
 <kits>
-    <kit name="potion">
+    <kit name="spawn">
+        <item slot="0">diamond sword</item>
+        <item slot="1">bow</item>
+        <item slot="2" enchantment="dig speed:1;durability:3">iron pickaxe</item>
+        <item slot="3">iron axe</item>
+        <item slot="4" amount="64">glass</item>
+        <item slot="5" amount="64">stone</item>
+        <item slot="6" amount="64" damage="2">log</item>
+        <item slot="7" amount="64">ladder</item>
+        <item slot="8" amount="64">bread</item>
+        <item slot="28" amount="64">arrow</item>
         <potion duration="10" amplifier="4">damage resistance</potion>
         <potion duration="15" amplifier="2">increase damage</potion>
     </kit>
-    <kit name="red" parents="potion">
+    <kit name="red" parents="spawn">
         <helmet unbreakable="true" color="993333">leather helmet</helmet>
         <chestplate unbreakable="true" color="993333">leather chestplate</chestplate>
     </kit>
-    <kit name="blue" parents="potion">
+    <kit name="blue" parents="spawn">
         <helmet unbreakable="true" color="334CB2">leather helmet</helmet>
         <chestplate unbreakable="true" color="334CB2">leather chestplate</chestplate>
     </kit>
@@ -90,9 +100,25 @@
         <cuboid min="-71,76,-175" max="-66,82,-171"/>
     </core>
 </cores>
+<killreward>
+    <item amount="16">arrow</item>
+</killreward>
+<toolrepair>
+    <tool>diamond sword</tool>
+    <tool>bow</tool>
+    <tool>iron pickaxe</tool>
+    <tool>iron axe</tool>
+</toolrepair>
 <itemremove>
     <item>obsidian</item>
     <item>leather helmet</item>
     <item>leather chestplate</item>
+    <item>stone</item>
+    <item>glass</item>
+    <item>log</item>
+    <item>wood</item>
+    <item>ladder</item>
+    <item>bread</item>
+    <item>arrow</item>
 </itemremove>
 </map>
