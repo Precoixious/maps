@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <map proto="1.0.0">
 <name>Shroom Trip</name>
-<version>1.6.6</version>
+<version>1.6.7</version>
 <objective>Leak lava from the enemy's obsidian shroom into the void.</objective>
 <authors>
     <author uuid="8b210772-8b0c-44b4-a4e2-2b543707ffc6"/> <!-- Omnigarde -->
@@ -14,19 +14,32 @@
     <team color="blue" max="32">Blue</team>
 </teams>
 <kits>
-    <kit name="shears">
+    <kit name="spawn">
+        <item slot="0">iron sword</item>
+        <item slot="1">iron pickaxe</item>
+        <item slot="2" amount="8">wood</item>
+        <item slot="6" amount="1">mushroom soup</item>
+        <item slot="7" amount="1">mushroom soup</item>
+        <item slot="8" amount="1">mushroom soup</item>
         <item slot="35" name="`6TNT Defuser" lore="`7Right click to defuse teammate's TNT|`7Does not work in `9water`7!">shears</item>
+        <chestplate>iron chestplate</chestplate>
     </kit>
 </kits>
+<toolrepair>
+    <tool>iron sword</tool>
+    <tool>iron pickaxe</tool>
+</toolrepair>
 <itemremove>
     <item>shears</item>
     <item>obsidian</item>
+    <item>iron chestplate</item>
+    <item>mushroom soup</item>
 </itemremove>
 <spawns>
-    <spawn team="blue" kit="shears" yaw="180">
+    <spawn team="blue" kit="spawn" yaw="180">
         <cuboid min="-1047.5,74,-348.5" max="-1045.5,74,-346.5"/>
     </spawn>
-    <spawn team="red" kit="shears" yaw="0">
+    <spawn team="red" kit="spawn" yaw="0">
         <cuboid min="-1047.5,74,-310.5" max="-1045.5,74,-308.5"/>
     </spawn>
     <default yaw="90">
