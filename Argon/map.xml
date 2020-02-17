@@ -2,7 +2,7 @@
 <map proto="1.3.2">
 <include src="tutorial.xml"/>
 <name>Argon</name>
-<version>1.2.4</version>
+<version>1.2.5</version>
 <objective>Capture the wool from the enemies wool rooms and return them to your spawn</objective>
 <authors>
     <author uuid="22ba442b-cf26-4d09-b290-8d4e50a551b2"/> <!-- dinner1111 -->
@@ -102,9 +102,8 @@
         <item slot="3" enchantment="durability:3;dig speed:2">iron axe</item>
         <item slot="4" amount="64" damage="2">log</item>
         <item slot="5" amount="64">glass</item>
-        <item slot="7">golden apple</item>            
-        <item slot="8" amount="64">cooked beef</item>   
-        <item slot="27" amount="64">arrow</item>
+        <item slot="7">golden apple</item>
+        <item slot="8" amount="64">cooked beef</item>
         <item slot="28" amount="64">arrow</item>
     </kit>
 </kits>
@@ -112,7 +111,7 @@
     <spawns kit="spawn" safe="true">
         <spawn team="cyan" yaw="270">
             <cylinder base="-407,13,33" radius="6" height="0"/>
-        </spawn> 
+        </spawn>
         <spawn team="purple" yaw="90">
             <cylinder base="-19,13,33" radius="6" height="0"/>
         </spawn>
@@ -122,12 +121,14 @@
     </default>
 </spawns>
 <maxbuildheight>35</maxbuildheight>
+<killreward>
+    <item amount="16">arrow</item>
+</killreward>
 <toolrepair>
     <tool>iron sword</tool>
     <tool>bow</tool>
     <tool>iron axe</tool>
     <tool>iron pickaxe</tool>
-    <item>arrow</item>
 </toolrepair>
 <itemremove>
     <item>golden apple</item>
@@ -139,6 +140,10 @@
     <item>glowstone dust</item>
     <item>cooked beef</item>
     <item>redstone wire</item>
+    <item>log</item>
+    <item>glass</item>
+    <item>arrow</item>
+    <item>wood</item>
 </itemremove>
 <timelock>on</timelock>
 <wools>
