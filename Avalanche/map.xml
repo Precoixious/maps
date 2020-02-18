@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <map proto="1.0.0">
 <name>Avalanche</name>
-<version>1.1.2</version>
+<version>1.1.3</version>
 <objective>Leak lava from the enemy's mountaintop core.</objective>
 <authors>
     <author uuid="74664520-5d92-4661-b207-b0434b342e8b"/> <!-- way2hot4rs -->
@@ -92,18 +92,52 @@
     </renewable>
 </renewables>
 <kits>
-    <kit name="shears">
-        <item slot="35" name="`6TNT Defuser" lore="`7Right click to defuse teammate's TNT|`7Does not work in `9water`7!">shears</item>
+    <kit name="spawn">
+        <item slot="0" material="diamond sword"/>
+        <item slot="1" material="bow"/>
+        <item slot="2" material="iron pickaxe" enchantment="efficiency:2;unbreaking:3"/>
+        <item slot="3" material="iron axe"/>
+        <item slot="4" material="log" damage="1" amount="64"/>
+        <item slot="5" material="cooked fish" amount="64"/>
+        <item slot="6" material="glass" amount="64"/>
+        <item slot="7" material="ladder" amount="64"/>
+        <item slot="8" material="shears" name="`6TNT Defuser" lore="`7Right click to defuse teammate's TNT|`7Does not work in `9water`7!"/>
+        <item slot="28" material="arrow" amount="64"/>
+    </kit>
+    <kit name="red" parents="spawn">
+        <helmet material="leather helmet" unbreakable="true" color="993333"/>
+        <chestplate material="leather chestplate" unbreakable="true" color="993333"/>
+    </kit>
+    <kit name="blue" parents="spawn">
+        <helmet material="leather helmet" unbreakable="true" color="334CB2"/>
+        <chestplate material="leather chestplate" unbreakable="true" color="334CB2"/>
     </kit>
 </kits>
+<killreward>
+    <item amount="16">arrow</item>
+</killreward>
+<toolrepair>
+    <tool>diamond sword</tool>
+    <tool>bow</tool>
+    <tool>iron pickaxe</tool>
+    <tool>iron axe</tool>
+</toolrepair>
 <itemremove>
     <item>shears</item>
+    <item>log</item>
+    <item>wood</item>
+    <item>glass</item>
+    <item>arrow</item>
+    <item>ladder</item>
+    <item>cooked fish</item>
+    <item>leather helmet</item>
+    <item>leather chestplate</item>
 </itemremove>
 <spawns>
-    <spawn team="red" yaw="90" kit="shears">
+    <spawn team="red" yaw="90" kit="red">
         <cylinder base="208,12,-5" radius="4" height="0"/>
     </spawn>
-    <spawn team="blue" yaw="270" kit="shears">
+    <spawn team="blue" yaw="270" kit="blue">
         <cylinder base="-6,12,-5" radius="4" height="0"/>
     </spawn>
     <default yaw="180">
