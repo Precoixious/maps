@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <map proto="1.0.0">
 <name>Tree of Life</name>
-<version>3.0.2</version>
+<version>3.0.3</version>
 <objective>Leak lava from the enemy's obsidian core into the void.</objective>
 <authors>
     <author uuid="2a289d2a-d970-49c5-9a6c-01fc0264e317"/> <!-- Stealth5061 -->
@@ -14,16 +14,54 @@
     <team color="dark red" max="50">Red</team>
 </teams>
 <spawns>
-    <spawn team="blue" yaw="0">
+    <spawn team="blue" yaw="0" kit="blue">
         <cylinder base="-192.5,70,-1106.5" radius="3" height="0"/>
     </spawn>
-    <spawn team="red" yaw="0">
+    <spawn team="red" yaw="0" kit="red">
         <cylinder base="-363.5,70,-1106.5" radius="3" height="0"/>
     </spawn>
     <default yaw="0">
         <cylinder base="-278,83,-1076" radius="5" height="0"/>
     </default>
 </spawns>
+<kits>
+    <kit name="spawn">
+        <item slot="0" material="diamond sword"/>
+        <item slot="1" material="bow"/>
+        <item slot="2" material="diamond pickaxe"/>
+        <item slot="3" material="diamond axe"/>
+        <item slot="4" material="bread" amount="64"/>
+        <item slot="5" material="log" amount="64"/>
+        <item slot="6" material="ladder" amount="64"/>
+        <item slot="28" material="arrow" amount="64"/>
+    </kit>
+    <kit name="red" parents="spawn">
+        <helmet material="leather helmet" unbreakable="true" color="993333"/>
+        <chestplate material="leather chestplate" unbreakable="true" color="993333"/>
+    </kit>
+    <kit name="blue" parents="spawn">
+        <helmet material="leather helmet" unbreakable="true" color="334CB2"/>
+        <chestplate material="leather chestplate" unbreakable="true" color="334CB2"/>
+    </kit>
+</kits>
+<killreward>
+    <item amount="16">arrow</item>
+</killreward>
+<toolrepair>
+    <tool>diamond sword</tool>
+    <tool>bow</tool>
+    <tool>diamond pickaxe</tool>
+    <tool>diamond axe</tool>
+</toolrepair>
+<itemremove>
+    <item>log</item>
+    <item>wood</item>
+    <item>arrow</item>
+    <item>ladder</item>
+    <item>bread</item>
+    <item>leather helmet</item>
+    <item>leather chestplate</item>
+</itemremove>
 <filters>
     <filter name="no-fire">
         <deny>
