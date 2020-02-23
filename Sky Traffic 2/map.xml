@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <map proto="1.0.0">
 <name>Sky Traffic 2</name>
-<version>1.1.7</version>
+<version>1.1.8</version>
 <objective>Leak lava from the enemy's obsidian core in their yellow submarine.</objective>
 <authors>
     <author uuid="459fd919-0d58-401a-9601-6cab1eb721ab"/> <!-- Reshif -->
@@ -102,9 +102,14 @@
 <crafting>
     <disable>boat</disable>
 </crafting>
+<toolrepair>
+    <tool>iron sword</tool>
+    <tool>iron pickaxe</tool>
+</toolrepair>
 <itemremove>
     <item>shears</item>
     <item>obsidian</item>
+    <item>iron chestplate</item>
 </itemremove>
 <spawns>
     <spawn team="red" kit="spawn" yaw="90">
