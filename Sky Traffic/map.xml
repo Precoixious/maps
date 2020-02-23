@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <map proto="1.0.0">
 <name>Sky Traffic</name>
-<version>1.5.3</version>
+<version>1.5.4</version>
 <objective>Leak lava from the enemy's obsidian core below their ship.</objective>
 <authors>
     <author uuid="459fd919-0d58-401a-9601-6cab1eb721ab"/> <!-- Reshif -->
@@ -135,6 +135,9 @@
         <potion duration="5" amplifier="10">heal</potion>
     </kit>
 </kits>
+<crafting>
+    <disable>boat</disable>
+</crafting>
 <toolrepair>
     <tool>iron sword</tool>
     <tool>iron pickaxe</tool>

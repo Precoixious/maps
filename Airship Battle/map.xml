@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <map proto="1.0.0">
 <name>Airship Battle</name>
-<version>1.0.9</version>
+<version>1.0.10</version>
 <objective>Leak lava from the enemy's obsidian core into the void.</objective>
 <authors>
     <author uuid="30e27366-0b14-4076-8f55-0819ece49ce3"/> <!-- Dewtroid -->
@@ -60,6 +60,9 @@
         </complement>
     </apply>
 </regions>
+<crafting>
+    <disable>boat</disable>
+</crafting>
 <toolrepair>
     <tool>iron sword</tool>
     <tool>iron pickaxe</tool>

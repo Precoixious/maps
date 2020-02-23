@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <map proto="1.0.0">
 <name>Shroom Trip</name>
-<version>1.6.7</version>
+<version>1.6.8</version>
 <objective>Leak lava from the enemy's obsidian shroom into the void.</objective>
 <authors>
     <author uuid="8b210772-8b0c-44b4-a4e2-2b543707ffc6"/> <!-- Omnigarde -->
@@ -25,6 +25,9 @@
         <chestplate>iron chestplate</chestplate>
     </kit>
 </kits>
+<crafting>
+    <disable>boat</disable>
+</crafting>
 <toolrepair>
     <tool>iron sword</tool>
     <tool>iron pickaxe</tool>
