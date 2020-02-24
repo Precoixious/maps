@@ -1,0 +1,363 @@
+<?xml version="1.0"?>
+<map proto="1.4.0">
+<name>Trench Warfare</name>
+<version>0.1</version>
+<objective>Capture all trenches, or be the team with most kills after 10 minutes.</objective>
+<authors>
+    <author uuid="1379cb6e-f291-4498-9807-e636f9674ac0"/> <!-- SH4D0W_HAWK -->
+    <author uuid="bff5b4ac-6d79-4a6e-be23-1ddcf1818036"/> <!-- Iced_Pineapple -->
+    <author uuid="ef4ea031-998f-4ec9-b7b6-1bdd428bcef8"/> <!-- Plastix -->
+</authors>
+<contributors>
+    <contributor uuid="6968cbde-c2b7-479c-a8da-f33f109f013b" contribution="XML"/> <!-- Brottweiler -->
+    <contributor uuid="a9f11454-beac-4cc3-a138-1780802c8794" contribution="XML Assistance"/> <!-- Crazy_ -->
+</contributors>
+<score>
+    <kills>1</kills>
+    <deaths>1</deaths>
+</score>
+<time>10m</time>
+<rules>
+    <rule>Switching/exchanging classes or items within a class is illegal.</rule>
+</rules>
+<hunger>
+    <depletion>off</depletion>
+</hunger>
+<timelock>on</timelock>
+<maxbuildheight>80</maxbuildheight>
+<gamerules>
+    <doFireTick>false</doFireTick>
+</gamerules>
+<broadcasts>
+    <tip every="2m" after="2s" count="oo">`3Switch class by `bright clicking`3 the `bsigns`3 left and right of spawn!</tip>
+    <tip every="2m" after="2s" count="oo" filter="only-cannoneer">`3Use your `bTNT`3 in the `bcannons`3 above spawn!</tip>
+</broadcasts>
+<teams>
+    <team id="blues" color="blue" max="20" max-overfill="24" show-name-tags="allies">Blue</team>
+    <team id="reds" color="dark red" max="20" max-overfill="24" show-name-tags="allies">Red</team>
+</teams>
+<spawns>
+    <spawn team="blues">
+        <regions yaw="90">
+            <cylinder base="-64,65,4" radius="1.5" height="1"/>
+        </regions>
+        <regions yaw="90">
+            <cylinder base="-64,65,-2" radius="1.5" height="1"/>
+        </regions>
+    </spawn>
+    <spawn team="reds">
+        <regions yaw="-90">
+            <cylinder base="64,65,-2" radius="1.5" height="1"/>
+        </regions>
+        <regions yaw="-90">
+            <cylinder base="64,65,4" radius="1.5" height="1"/>
+        </regions>
+    </spawn>
+    <default>
+        <regions yaw="0">
+            <cylinder base="0, 91, -60" radius="3" height="1"/>
+        </regions>
+    </default>
+</spawns>
+<classes family="classes">
+    <!--- Offensive classes -->
+    <class name="Soldier" default="true" description="Basic infantry equipped with medium armor and weapon." icon="iron sword">
+        <kit>
+            <item slot="0" unbreakable="true" material="iron sword"/>
+            <item slot="1" amount="16" material="egg"/>
+            <helmet material="diamond helmet" unbreakable="true"/>
+            <chestplate material="iron chestplate" unbreakable="true"/>
+            <leggings material="iron leggings" unbreakable="true"/>
+            <boots material="iron boots" unbreakable="true"/>
+        </kit>
+    </class>
+    <class name="Demoman" description="Specializes in high explosive materials." icon="sulphur">
+        <kit>
+            <item slot="0" unbreakable="true" material="stone sword"/>
+            <item slot="1" name="TNT" projectile="gun" material="tnt" amount="8"/>
+            <item slot="2" damage="16396" amount="5" material="potion"/> <!-- splash potion of harming -->
+            <helmet material="iron helmet" enchantment="blast_protection:4" unbreakable="true"/>
+            <chestplate material="iron chestplate" enchantment="blast_protection:4" unbreakable="true"/>
+            <leggings material="iron leggings" enchantment="blast_protection:4" unbreakable="true"/>
+            <boots material="iron boots" enchantment="blast_protection:4" unbreakable="true"/>
+        </kit>
+    </class>
+    <class name="Scout" description="A class good for a quick trench capture." icon="feather">
+        <kit>
+            <item slot="0" enchantment="knockback" unbreakable="true" material="wood sword"/>
+            <item slot="1" enchantment="efficiency" unbreakable="true" material="stone axe"/>
+            <chestplate material="iron chestplate" unbreakable="true"/>
+            <leggings material="leather leggings" unbreakable="true"/>
+            <effect duration="oo" amplifier="2">speed</effect>
+        </kit>
+    </class>
+    <class name="Pyro" description="A unit that specializes in fire." icon="flint and steel">
+        <kit>
+            <item slot="0" enchantment="fire aspect:2" unbreakable="true" material="stone sword"/>
+            <item slot="1" damage="55" material="flint and steel"/>
+            <helmet material="chainmail helmet" enchantment="fire_protection:3" unbreakable="true"/>
+            <chestplate material="chainmail chestplate" enchantment="fire_protection:3" unbreakable="true"/>
+            <leggings material="chainmail leggings" enchantment="fire_protection:3" unbreakable="true"/>
+            <boots material="chainmail boots" enchantment="fire_protection:3" unbreakable="true"/>
+        </kit>
+    </class>
+    <class name="Assassin" description="Able to move quickly, high damage, but low armor." icon="diamond sword">
+        <kit>
+            <item slot="0" enchantment="sharpness" unbreakable="true" material="iron sword"/>
+            <item slot="1" enchantment="sharpness:10" damage="1651" material="diamond sword"/>
+            <helmet material="gold helmet" unbreakable="true"/>
+            <boots material="leather boots" unbreakable="true"/>
+            <effect duration="oo">speed</effect>
+        </kit>
+    </class>
+    <class name="Spy" description="Able to turn invisible for 10 seconds!" icon="watch">
+        <kit>
+            <item slot="0" enchantment="sharpness:2" unbreakable="true" material="iron sword"/>
+                <!-- <item slot="1" damage="8238">potion</item> --> <!-- potion of invisibility -->
+            <!-- Give two potions because old kit had two clocks -->
+            <item slot="2" material="potion" name="10 Seconds of Invisibility">
+                <effect duration="10s">invisibility</effect>
+            </item>
+            <item slot="3" material="potion" name="10 Seconds of Invisibility">
+                <effect duration="10s">invisibility</effect>
+            </item>
+            <helmet material="iron helmet" unbreakable="true"/>
+            <chestplate material="leather chestplate" unbreakable="true"/>
+            <leggings material="gold leggings" unbreakable="true"/>
+            <boots material="chainmail boots" unbreakable="true"/>
+            <effect duration="oo" amplifier="2">speed</effect>
+        </kit>
+    </class>
+
+    <!-- Defensive classes -->
+    <class name="Heavy" description="A class with good armor and deals high damage but slow movement speed." icon="diamond helmet">
+        <kit>
+            <item slot="0" enchantment="sharpness" unbreakable="true" material="diamond sword"/>
+            <helmet material="diamond helmet" enchantment="protection" unbreakable="true"/>
+            <chestplate material="diamond chestplate" enchantment="protection" unbreakable="true"/>
+            <leggings material="diamond leggings" enchantment="protection" unbreakable="true"/>
+            <boots material="diamond boots" enchantment="protection" unbreakable="true"/>
+            <effect duration="oo">slowness</effect>
+        </kit>
+    </class>
+    <class name="Engineer" description="Can create defenses on the map to provide cover." icon="wood">
+        <kit>
+            <item slot="0" unbreakable="true" material="iron axe"/>
+            <item slot="1" unbreakable="true" material="shears"/>
+            <item slot="2" amount="32" material="wood"/>
+            <item slot="3" amount="16" material="web"/>
+            <helmet material="chainmail helmet" unbreakable="true"/>
+            <chestplate material="iron chestplate" unbreakable="true"/>
+            <leggings material="iron leggings" unbreakable="true"/>
+            <boots material="chainmail boots" unbreakable="true"/>
+        </kit>
+    </class>
+    <class name="Commander" description="Able to raise the strength and protection of other units." icon="compass">
+        <kit>
+            <item slot="0" unbreakable="true" material="iron sword"/>
+            <item slot="1" damage="16393" amount="10" material="potion"/>
+            <item slot="2" damage="16387" amount="10" material="potion"/>
+            <helmet material="gold helmet" unbreakable="true"/>
+            <chestplate material="diamond chestplate" unbreakable="true"/>
+            <leggings material="gold leggings" unbreakable="true"/>
+            <boots material="gold boots" unbreakable="true"/>
+        </kit>
+    </class>
+    <class name="Sniper" description="A unit equiped with a bow but has low armor." icon="bow">
+        <kit>
+            <item slot="0" unbreakable="true" material="stone sword"/>
+            <item slot="1" enchantment="infinity;punch:2;power:2" unbreakable="true" material="bow"/>
+            <item slot="28" material="arrow"/>
+            <helmet material="chainmail helmet" unbreakable="true"/>
+            <chestplate material="leather chestplate" unbreakable="true"/>
+            <leggings material="leather leggings" unbreakable="true"/>
+            <boots material="leather boots" unbreakable="true"/>
+        </kit>
+    </class>
+    <class name="Medic" description="Able to heal friendly units, but make enemy units weak." icon="golden apple">
+        <kit>
+            <item slot="0" unbreakable="true" material="stone sword"/>
+            <item slot="1" damage="16389" amount="16" material="potion"/>
+            <item slot="2" damage="16424" amount="8" material="potion"/> <!-- Healing pots seems to have made enemies weak, so let's give weakness potions instead -->
+            <helmet material="gold helmet" unbreakable="true"/>
+            <chestplate material="gold chestplate" unbreakable="true"/>
+            <leggings material="gold leggings" unbreakable="true"/>
+            <boots material="gold boots" unbreakable="true"/>
+        </kit>
+    </class>
+    <class name="Cannoneer" description="Equiped with TNT to use with the cannons on the map." icon="tnt">
+        <kit>
+            <item slot="0" unbreakable="true" material="stone sword"/>
+            <item slot="1" amount="64" material="tnt"/>
+            <item slot="2" amount="64" material="tnt"/>
+            <item slot="3" amount="64" material="tnt"/>
+            <item slot="4" amount="64" material="tnt"/>
+            <item slot="5" name="Grenade" amount="6" grenade="true" grenade-power="1.5" material="snow ball"/>
+            <helmet material="chainmail helmet" enchantment="blast_protection:4" unbreakable="true"/>
+            <chestplate material="chainmail chestplate" enchantment="blast_protection:4" unbreakable="true"/>
+            <leggings material="chainmail leggings" enchantment="blast_protection:4" unbreakable="true"/>
+            <boots material="chainmail boots" enchantment="blast_protection:4" unbreakable="true"/>
+        </kit>
+    </class>
+</classes>
+<filters>
+    <team id="only-red">reds</team>
+    <team id="only-blue">blues</team>
+    <deny id="no-tnt">
+        <material>tnt</material>
+    </deny>
+    <any id="only-tnt">
+        <material>tnt</material>
+    </any>
+    <not id="break-restrictions"> <!--Deny breaking stone brick and iron objects-->
+        <any>
+            <material>iron block</material>
+            <material damage="5">step</material>
+            <material>redstone wire</material>
+            <material>wall sign</material>
+            <material>stone plate</material>
+            <material>smooth brick</material>
+            <material>iron fence</material>
+            <material>smooth stairs</material>
+            <material>wood button</material>
+            <material>wool</material>
+            <material>ladder</material>
+            <material>wood stairs</material>
+        </any>
+    </not>
+    <any id="only-cannoneer">
+        <class>cannoneer</class>
+    </any>
+</filters>
+<regions>
+    <negative id="playable-inverse">
+        <union id="playable">
+            <rectangle id="main-area" min="59,-10" max="-60,11"/>
+            <union id="bases">
+                <union id="red-base-area">
+                    <rectangle id="red-base" min="60,-17" max="76,18"/>
+                    <rectangle id="red-side-right" min="59,-11" max="44,-17"/>
+                    <rectangle id="red-side-left" min="59,12" max="44,18"/>
+                </union>
+                <union id="blue-base-area">
+                    <rectangle id="blue-base" min="-61,18" max="-77,-17"/>
+                    <rectangle id="blue-side-left" min="-60,12" max="-45,18"/>
+                    <rectangle id="blue-side-right" min="-60,-11" max="-45,-17"/>
+                </union>
+            </union>
+        </union>
+    </negative>
+    <union id="cannons">
+        <cuboid id="red-cannon1" min="69,74,6" max="65,78,7"/>
+        <cuboid id="red-cannon2" min="72,74,-0" max="63,77,2"/>
+        <cuboid id="red-cannon3" min="69,74,-4" max="65,78,-5"/>
+        <cuboid id="blue-cannon1" min="-69,74,-5" max="-65,78,-4"/>
+        <cuboid id="blue-cannon2" min="-72,74,2" max="-63,77,0"/>
+        <cuboid id="blue-cannon3" min="-69,74,6" max="-65,78,7"/>
+    </union>
+    <apply enter="only-red" region="red-base-area" message="Only red can enter this area!"/>
+    <apply enter="only-blue" region="blue-base-area" message="Only blue can enter this area!"/>
+    <apply block="only-tnt" region="cannons"/>
+    <apply block="no-tnt" region="main-area" message="You may only place TNT inside cannons!"/>
+    <apply block="never" region="bases" message="You cannot modify the base!"/>
+    <apply block="break-restrictions" region="main-area" message="You may not break this block!"/>
+    <apply block="never" region="playable-inverse"/>
+</regions>
+<control-points incremental="true" show-progress="true" required="false">
+    <control-point name="East Trench" capture-time="20s">
+        <capture><cuboid min="22,62,-7" max="26,69,9"/></capture>
+        <progress><cuboid min="21,67,-7" max="27,68,9"/></progress>
+        <captured><cuboid min="22,62,-7" max="26,69,9"/></captured>
+    </control-point>
+    <control-point name="Middle Trench" capture-time="30s" points="1.25">
+        <capture><cuboid min="-2,62,-7" max="2,69,9"/></capture>
+        <progress><cuboid min="-3,66,-7" max="3,67,9"/></progress>
+        <captured><cuboid min="-2,62,-7" max="2,69,9"/></captured>
+    </control-point>
+    <control-point name="West Trench" capture-time="20s">
+        <capture><cuboid min="-26,62,-7" max="-22,69,9"/></capture>
+        <progress><cuboid min="-27,67,-7" max="-21,68,9"/></progress>
+        <captured><cuboid min="-26,62,-7" max="-22,69,9"/></captured>
+    </control-point>
+</control-points>
+<projectiles>
+    <projectile
+        id="gun"
+        name="gun"
+        projectile="TNTPrimed"
+        velocity="0.3"
+        damage="20"
+        throwable="true"
+        cooldown="5s"
+        click="right"/>
+</projectiles>
+<tnt>
+    <blockdamage>off</blockdamage>
+</tnt>
+<damage ally="false" self="false">
+    <deny>
+        <any>
+            <region id="bases"/>
+        </any>
+    </deny>
+</damage>
+<itemremove>
+    <item>potion</item>
+    <item>leather helmet</item>
+    <item>leather chestplate</item>
+    <item>leather leggings</item>
+    <item>leather boots</item>
+    <item>gold helmet</item>
+    <item>gold chestplate</item>
+    <item>gold leggings</item>
+    <item>gold boots</item>
+    <item>chainmail helmet</item>
+    <item>chainmail chestplate</item>
+    <item>chainmail leggings</item>
+    <item>chainmail boots</item>
+    <item>iron helmet</item>
+    <item>iron chestplate</item>
+    <item>iron leggings</item>
+    <item>iron boots</item>
+    <item>diamond helmet</item>
+    <item>diamond chestplate</item>
+    <item>diamond leggings</item>
+    <item>diamond boots</item>
+    <item>wood sword</item>
+    <item>stone sword</item>
+    <item>iron sword</item>
+    <item>diamond sword</item>
+    <item>bow</item>
+    <item>arrow</item>
+    <item>iron axe</item>
+    <item>stone axe</item>
+    <item>string</item>
+    <item>shears</item>
+    <item>flint and steel</item>
+    <item>flint</item>
+    <item>glass bottle</item>
+    <item>stick</item>
+    <item>torch</item>
+    <item>painting</item>
+    <item>dirt</item>
+    <item>wood</item>
+    <item>leaves</item>
+    <item>ladder</item>
+    <item>wool</item>
+    <item>log</item>
+    <item>tnt</item>
+    <item>web</item>
+    <item>string</item>
+    <item>golden apple</item>
+    <item>gravel</item>
+    <item>soul sand</item>
+    <item>egg</item>
+    <item>sulphur</item>
+    <item>watch</item>
+    <item>fireball</item>
+    <item>snow ball</item>
+</itemremove>
+<killreward>
+    <item name="Health Kit">golden apple</item>
+</killreward>
+</map>
