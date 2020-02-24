@@ -1,7 +1,6 @@
 <map proto="1.4.0" game="Capture the Wool">
 <name>Oaken Meadow</name>
-<slug>home_of_rocky</slug>
-<version>1.2.2</version>
+<version>1.2.3</version>
 <objective>Capture the enemy teams wool!</objective>
 <authors>
     <author uuid="fe3608b7-d105-4029-8800-34b3147065b6"/>
@@ -11,13 +10,13 @@
 <timelock>on</timelock>
 <gamemode>ctw</gamemode>
 <broadcasts>
-    <tip after="5s">`rPlease read the `5`lInformation Board `rleft in front of your spawn to learn more about this map!</tip> 
+    <tip after="5s">`rPlease read the `5`lInformation Board `rleft in front of your spawn to learn more about this map!</tip>
 	<tip after="5s">`rTo craft armor use the `5`liron ingots `rinside of your Spawnkit!</tip>
 	<tip after="10s" every="5m">`rThe wool is located inside of the `5`l"Castles"`r. These are marked by beacons and colored roofs!</tip>
 </broadcasts>
 <teams>
     <team id="red" color="dark red" max="30" max-overfill="32">Red</team>
-    <team id="blue" color="blue" max="30" max-overfill="32">Blue</team>        
+    <team id="blue" color="blue" max="30" max-overfill="32">Blue</team>
 </teams>
 <spawns>
     <spawn team="red" kit="red-spawn-kit">
@@ -47,9 +46,9 @@
         <item slot="5" amount="16" damage="2">wood</item>
         <item slot="6" amount="64" damage="2">wood</item>
 		<item slot="7" amount="32">iron ingot</item>
-		<item slot="8" enchantment="dig speed:2" unbreakable="true">shears</item>		
+		<item slot="8" enchantment="dig speed:2" unbreakable="true">shears</item>
         <item slot="20" enchantment="dig speed:2" unbreakable="true">iron spade</item>
-	    <item slot="28">arrow</item>	
+	    <item slot="28">arrow</item>
         <item slot="33" amount="32">wood button</item>
         <item slot="34" amount="32">fence</item>
 		<item slot="35" amount="32">workbench</item>
@@ -58,13 +57,13 @@
         <helmet unbreakable="true" color="ff0000">leather helmet</helmet>
 		<chestplate unbreakable="true" color="ff0000">leather chestplate</chestplate>
         <leggings unbreakable="true" color="ff0000">leather leggings</leggings>
-        <boots unbreakable="true" color="ff0000">leather boots</boots>            
+        <boots unbreakable="true" color="ff0000">leather boots</boots>
     </kit>
     <kit id="blue-spawn-kit" parents="spawn">
         <helmet unbreakable="true" color="0000ff">leather helmet</helmet>
-		<chestplate unbreakable="true" color="0000ff">leather chestplate</chestplate>		
+		<chestplate unbreakable="true" color="0000ff">leather chestplate</chestplate>
         <leggings unbreakable="true" color="0000ff">leather leggings</leggings>
-        <boots unbreakable="true" color="0000ff">leather boots</boots>                 
+        <boots unbreakable="true" color="0000ff">leather boots</boots>
     </kit>
 </kits>
 <filters>
@@ -89,13 +88,13 @@
     </allow>
     <allow id="step">
         <material>wood step</material>
-    </allow>   
+    </allow>
     <allow id="stairs">
         <material>spruce wood stairs</material>
-    </allow>  
+    </allow>
     <allow id="wood">
         <material>wood</material>
-    </allow>      
+    </allow>
 </filters>
 <regions>
     <negative id="non-bridge">
@@ -103,17 +102,17 @@
 		    <rectangle id="mid-a" min="2058,29" max="2016,46"/>
 			<rectangle id="mid-b" min="1999,80" max="2041,63"/>
 			<rectangle id="rsw" min="1953,63" max="1970,80"/>
-			<rectangle id="rnw" min="1970,46" max="1987,29"/>			
-			<rectangle id="bsw" min="2087,63" max="2070,80"/>			
-			<rectangle id="bnw" min="2104,46" max="2087,29"/>						
+			<rectangle id="rnw" min="1970,46" max="1987,29"/>
+			<rectangle id="bsw" min="2087,63" max="2070,80"/>
+			<rectangle id="bnw" min="2104,46" max="2087,29"/>
 		</union>
-	</negative>	
+	</negative>
 	<union id="above-cobwebs">
 	    <rectangle min="2019,28" max="2056,27"/>
 		<rectangle min="2019,48" max="2052,47"/>
 	    <rectangle min="2005,62" max="2038,61"/>
 		<rectangle min="2001,82" max="2038,81"/>
-	</union>	
+	</union>
     <union id="spawns">
         <rectangle id="red-spawn" min="1936,46" max="1919,29"/>
         <rectangle id="blue-spawn" min="2121,63" max="2138,80"/>
@@ -125,7 +124,7 @@
 	<union id="blue-wools">
 	    <rectangle id="green-wool" min="2070,131" max="2052,152"/>
 		<rectangle id="lime-wool" min="2087,-22" max="2069,-43"/>
-	</union>	
+	</union>
 	<union id="wool-rooms">
 	    <region id="red-wools"/>
 		<region id="blue-wools"/>
@@ -141,7 +140,7 @@
     <union id="wool-monuments">
         <rectangle id="rm" min="1942,57" max="1936,52"/>
         <rectangle id="bm" min="2115,52" max="2121,57"/>
-	</union>		
+	</union>
     <union id="do-not-edit">
         <region id="spawns"/>
 		<region id="wool-monuments"/>
@@ -149,15 +148,15 @@
 	</union>
 	<apply block-break="only-some" block-place="never" region="wool-rooms"/>
 	<apply block="never" region="do-not-edit" message="You may not modify this area!"/>
-	<apply block-break="leaves" region="non-bridge"/> 
-	<apply block-break="logs" region="non-bridge"/> 
-    <apply block-break="step" region="non-bridge"/> 
-    <apply block-break="stairs" region="non-bridge"/> 
-    <apply block-break="wood" region="non-bridge"/> 
+	<apply block-break="leaves" region="non-bridge"/>
+	<apply block-break="logs" region="non-bridge"/>
+    <apply block-break="step" region="non-bridge"/>
+    <apply block-break="stairs" region="non-bridge"/>
+    <apply block-break="wood" region="non-bridge"/>
 	<apply block="no-void" region="non-bridge" message="You may not modify the void area!"/>
 	<apply enter="deny-red" message="Only blue team may enter this region!" region="only-blue-zones"/>
     <apply enter="deny-blue" message="Only red team may enter this region!" region="only-red-zones"/>
-</regions>	
+</regions>
 <toolrepair>
     <tool>bow</tool>
     <tool>iron sword</tool>
@@ -185,29 +184,29 @@
 </itemremove>
 <wools team="red">
     <wool color="green" location="2061.5,21,141.5">
-	    <monument> 
+	    <monument>
 		    <block>1937,8,55</block>
 		</monument>
-	</wool>	
+	</wool>
     <wool color="lime" location="2078.5,21,-32.5">
-	    <monument> 
+	    <monument>
 		    <block>1937,8,53</block>
 		</monument>
-	</wool>	
+	</wool>
 </wools>
 <wools team="blue">
     <wool color="pink" location="1995.5,21,-32.5">
-	    <monument> 
+	    <monument>
 		    <block>2119,8,53</block>
 		</monument>
-	</wool>	
+	</wool>
     <wool color="purple" location="1978.5,21,141.5">
-	    <monument> 
+	    <monument>
 		    <block>2119,8,55</block>
 		</monument>
-	</wool>	
+	</wool>
 </wools>
 <killreward>
     <item damage="2" amount="8">wood</item>
-</killreward>		
+</killreward>
 </map>
