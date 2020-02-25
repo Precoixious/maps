@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <map proto="1.3.2">
-<name>Persisto</name> 
-<version>1.3.4</version> 
+<name>Persisto</name>
+<version>1.3.5</version>
 <objective>Capture both wools to win.</objective>
 <authors>
     <author uuid="8f9344cf-7367-4e28-9f24-5c66422f28c9" contribution="Aesthetics, XML and gameplay ideas."/> <!-- Timothee38 -->
@@ -43,6 +43,7 @@
         <item slot="5" amount="32">wood</item>
         <item slot="6" amount="32">glass</item>
         <item slot="7">bucket</item>
+        <item slot="8">golden apple</item>
         <item slot="28" amount="64">arrow</item>
         <potion duration="5" amplifier="1">heal</potion>
     </kit>
@@ -120,7 +121,7 @@
             <rectangle min="60,38" max="73,63"/>
         </union>
         <union name="red-spawn">
-            <rectangle min="24,144" max="-1,153"/> <!--red spawn -->			
+            <rectangle min="24,144" max="-1,153"/> <!--red spawn -->
         </union>
     </apply>
     <apply enter="only-blue">
@@ -167,7 +168,7 @@
         <negative><region name="block-placing-allowed"/></negative>
         <union name= "no-block-place in spawns">
             <region name="blue-spawn"/>
-            <region name="red-spawn"/>	
+            <region name="red-spawn"/>
         </union>
     </apply>
     <apply block="red-rooms">
@@ -177,6 +178,9 @@
         <region name="red-wr"/>
     </apply>
 </regions>
+<killreward>
+    <item>golden apple</item>
+</killreward>
 <maxbuildheight>30</maxbuildheight>
 <toolrepair>
     <tool>stone sword</tool>
