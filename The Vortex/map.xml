@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <map proto="1.4.0">
 <name>The Vortex</name>
-<version>0.4</version>
+<version>0.5</version>
 <objective>Be the team with the most kills after 10 minutes.</objective>
 <authors>
     <author uuid="177803b2-797c-4089-aae1-5702ca259e2c"/> <!-- Onsole, lack of original author -->
@@ -117,6 +117,7 @@
         <item>golden apple</item>
     </kill-reward>
 </kill-rewards>
+<maxbuildheight>25</maxbuildheight>
 <toolrepair>
     <tool>stone sword</tool>
     <tool>bow</tool>
