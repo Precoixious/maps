@@ -14,8 +14,8 @@
     <!-- Qixit -->
 </contributors>
 <teams>
-    <team id="red" color="dark red" max="28" max-overfill="32">Red</team>
-    <team id="blue" color="blue" max="28" max-overfill="32">Blue</team>
+    <team id="red" color="dark red" max="20" max-overfill="24">Red</team>
+    <team id="blue" color="blue" max="20" max-overfill="24">Blue</team>
 </teams>
 <kits>
     <kit id="spawn" force="true">
