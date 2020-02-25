@@ -12,8 +12,8 @@
     <contributor uuid="04415962-13e2-4010-b5f1-6d5ed7e537d4" contribution="XML Fixes"/> <!-- Poseidons -->
 </contributors>
 <teams>
-    <team id="red"  color="dark red" max="20">Red</team>
-    <team id="blue" color="blue"     max="20">Blue</team>
+    <team id="red"  color="dark red" max="12" max-overfill="16">Red</team>
+    <team id="blue" color="blue"     max="12" max-overfill="16">Blue</team>
 </teams>
 <spawns>
     <default                         region="defaultSpawn" yaw="90" />
@@ -120,7 +120,7 @@
         <region>
             <region id="redMonument" />
             <region id="blueMonument" />
-        </region>	
+        </region>
     </apply>
     <apply region="redWoolRooms"  block="woolroomRed"  use="onlyRed"  message="You may not interact with that material" />
     <apply region="blueWoolRooms" block="woolroomBlue" use="onlyBlue" message="You may not interact with that material" />
