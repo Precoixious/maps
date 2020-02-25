@@ -19,8 +19,8 @@
     <tip after="2s">`7You will get `b8 wood`7 and `b1 golden apple `7every kill</tip>
 </broadcasts>
 <teams>
-    <team id="green-team" color="green" max="20" max-overfill="25">Green</team>
-    <team id="blue-team" color="blue" max="20" max-overfill="25">Blue</team>
+    <team id="green-team" color="green" max="16" max-overfill="20">Green</team>
+    <team id="blue-team" color="blue" max="16" max-overfill="20">Blue</team>
 </teams>
 <spawns>
     <spawn team="green-team" kit="green-kit">
