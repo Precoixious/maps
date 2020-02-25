@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <map proto="1.4.0">
 <name>The Vortex</name>
-<version>0.3</version>
+<version>0.4</version>
 <objective>Be the team with the most kills after 10 minutes.</objective>
 <authors>
     <author uuid="177803b2-797c-4089-aae1-5702ca259e2c"/> <!-- Onsole, lack of original author -->
@@ -22,10 +22,10 @@
 </hunger>
 <timelock>on</timelock>
 <teams>
-    <team id="blues" color="blue" max="16" max-overfill="20">Blue Team</team>
-    <team id="reds" color="dark red" max="16" max-overfill="20">Red Team</team>
-    <team id="oranges" color="gold" max="16" max-overfill="20">Orange Team</team>
-    <team id="greens" color="green" max="16" max-overfill="20">Green Team</team>
+    <team id="blues" color="blue" max="20" max-overfill="24">Blue Team</team>
+    <team id="reds" color="dark red" max="20" max-overfill="24">Red Team</team>
+    <team id="oranges" color="gold" max="20" max-overfill="24">Orange Team</team>
+    <team id="greens" color="green" max="20" max-overfill="24">Green Team</team>
 </teams>
 <kits>
     <kit id="spawn">
