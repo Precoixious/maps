@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <map proto="1.3.3">
 <name>Blizz</name>
-<version>1.3.5</version>
+<version>1.3.6</version>
 <objective>You must be the first team to get to 750 points before time runs out!</objective>
 <authors>
     <author uuid="5c0d744e-2561-4e24-966c-2f5ca4a8f8eb"/> <!-- SamSafari -->
@@ -175,11 +175,11 @@
             <everywhere/>
         </region>
     </renewable>
-</renewables><!-- Disable until fixed
+</renewables>
 <modifybowprojectile>
     <projectile>Snowball</projectile>
     <velocityMod>1.5</velocityMod>
-</modifybowprojectile>-->
+</modifybowprojectile>
 <disabledamage>
     <damage enemy="false" other="false">block explosion</damage>
 </disabledamage>
