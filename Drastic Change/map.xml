@@ -1,6 +1,6 @@
 <map proto="1.4.0">
 <name>Drastic Change</name>
-<version>1.2.1</version>
+<version>1.2.2</version>
 <objective>Capture the two enemy's wools!</objective>
 <authors>
     <author uuid="fe3608b7-d105-4029-8800-34b3147065b6"/>
@@ -28,7 +28,7 @@
     </kit>
     <kit id="red" parents="spawn">
         <helmet color="ff0000" unbreakable="true">leather helmet</helmet>
-        <chestplate color="ff0000" unbreakable="true">leather chestplate</chestplate> 
+        <chestplate color="ff0000" unbreakable="true">leather chestplate</chestplate>
     </kit>
     <kit id="blue" parents="spawn">
         <helmet color="0000ff" unbreakable="true">leather helmet</helmet>
@@ -81,7 +81,7 @@
     <union id="blue-wool-rooms">
         <rectangle min="-824,-671" max="-841,-654"/>
         <!-- Magenta -->
-        <rectangle min="-824,-721" max="-841,-704"/> 
+        <rectangle min="-824,-721" max="-841,-704"/>
         <!-- Pink -->
     </union>
     <union id="spawns">
@@ -105,8 +105,8 @@
         <region>
             <region id="blue-spawn"/>
             <region id="red-wool-rooms"/>
-        </region>    
-    </apply> 
+        </region>
+    </apply>
     <apply block-break="only-some" block-place="only-red" region="blue-wool-rooms"/>
     <apply block-break="only-some" block-place="only-blue" region="red-wool-rooms"/>
     <apply block="never" region="spawns"/>
@@ -149,7 +149,7 @@
     <tool>bow</tool>
     <tool>arrow</tool>
     <tool>stone sword</tool>
-    <tool>stone pickaxe</tool> 
+    <tool>iron pickaxe</tool>
     <tool>stone axe</tool>
     <tool>shears</tool>
 </toolrepair>
@@ -183,5 +183,5 @@
 <maxbuildheight>16</maxbuildheight>
 <killreward>
     <item amount="8" damage="2">wood</item>
-</killreward> 
+</killreward>
 </map>
