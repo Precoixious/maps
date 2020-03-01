@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <map proto="1.3.0">
 <name>Bessemer's Process</name>
-<version>1.0.3</version>
+<version>1.0.4</version>
 <objective>Leak lava from the enemy's obsidian core.</objective>
 <authors>
     <author uuid="c7afcff7-72ea-4029-9048-d03aae9fcfdb" contribution="Overall design, major building, coding"/> <!-- Zelocksurian -->
@@ -13,13 +13,12 @@
 <teams>
     <team color="blue" max="32">Blue</team>
     <team color="dark red" max="32">Red</team>
-</teams> 
+</teams>
 <kits>
     <kit name="spawn">
         <item slot="0">iron sword</item>
         <item slot="1">bow</item>
         <item slot="2" enchantment="dig speed:1">iron pickaxe</item>
-        <item slot="28" amount="64">arrow</item>
         <item slot="19" amount="64">arrow</item>
         <item slot="3" amount="32">cooked fish</item>
         <item slot="4" amount="64">brick</item>
@@ -72,6 +71,9 @@
         <cuboid min="20,11,82" max="24,17,86"/>
     </core>
 </cores>
+<killreward>
+    <item amount="16">arrow</item>
+</killreward>
 <toolrepair>
     <tool>iron sword</tool>
     <tool>bow</tool>
@@ -83,6 +85,7 @@
     <item>chainmail chestplate</item>
     <item>cooked fish</item>
     <item>arrow</item>
+    <item>obsidian</item>
 </itemremove>
 <maxbuildheight>39</maxbuildheight>
 </map>
