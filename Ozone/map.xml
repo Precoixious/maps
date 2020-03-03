@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <map proto="1.0.0">
 <name>Ozone</name>
-<version>1.0.2</version>
+<version>1.0.3</version>
 <objective>Be the team with the least amount of deaths after 15 minutes.</objective>
 <authors>
     <author uuid="ef4ea031-998f-4ec9-b7b6-1bdd428bcef8" contribution="Overall Map Design and XML code"/> <!-- Plastix -->
@@ -18,8 +18,8 @@
 </rules>
 <teams>
     <!-- Hipster Team Colors -->
-    <team color="dark aqua" max="40">Cyan</team>
-    <team color="dark purple" max="40">Purple</team>
+    <team color="dark aqua" max="50">Cyan</team>
+    <team color="dark purple" max="50">Purple</team>
 </teams>
 <regions>
     <apply block="deny-all">
