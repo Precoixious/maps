@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <map proto="1.0.1">
 <name>Battle of Tenjin</name>
-<version>1.2.3</version>
+<version>1.2.4</version>
 <objective>Break and drain the opposing team's core.</objective>
 <authors>
     <author uuid="90e029a3-6873-46a7-8430-0ec3dbc42aba"/> <!-- SajinZero -->
@@ -99,7 +99,19 @@
         <cuboid min="-3,23,-68" max="4,31,-75"/>
     </core>
 </cores>
+<toolrepair>
+    <tool>iron sword</tool>
+    <tool>bow</tool>
+    <tool>diamond pickaxe</tool>
+    <tool>iron axe</tool>
+</toolrepair>
 <itemremove>
     <item>flint</item>
+    <item>ladder</item>
+    <item>log</item>
+    <item>wood</item>
+    <item>glass</item>
+    <item>cooked fish</item>
+    <item>arrow</item>
 </itemremove>
 </map>
