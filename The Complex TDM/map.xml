@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <map proto="1.3.4">
 <name>The Complex TDM</name>
-<version>1.0.1</version>
+<version>1.0.2</version>
 <objective>Get the most kills after 10 minutes.</objective>
 <authors>
     <author uuid="ef4ea031-998f-4ec9-b7b6-1bdd428bcef8"/> <!-- Plastix -->
@@ -45,16 +45,16 @@
     <portal name="red-portal-main" x="-14" y="12" z="14" yaw="@45">
         <cuboid min="26,12,-26" max="27,15,-25"/>
     </portal>
-    <portal name="red-portal-center" x="14" y="-12" z="-14" yaw="@-145"> 
+    <portal name="red-portal-center" x="14" y="-12" z="-14" yaw="@-145">
         <cuboid min="15,27,-13" max="14,24,-14"/>
     </portal>
     <portal name="blue-portal-main" x="14" y="12" z="-14" yaw="@-145">
         <cuboid min="-25,14,27" max="-26,12,26"/>
     </portal>
-    <portal name="blue-portal-center" x="-14" y="-12" z="14" yaw="@45"> 
+    <portal name="blue-portal-center" x="-14" y="-12" z="14" yaw="@45">
         <cuboid min="-13,27,15" max="-14,24,14"/>
     </portal>
-    <portal name="top-portal-1" x="15" y="-30" z="15" yaw="@135"> 
+    <portal name="top-portal-1" x="15" y="-30" z="15" yaw="@135">
         <cuboid min="32,39,32" max="31,36,31"/>
     </portal>
     <portal name="bottom-portal-1" x="-19" y="30" z="-19" yaw="@135">
@@ -136,19 +136,19 @@
     <item>gold chestplate</item>
     <item>leather leggings</item>
     <item>leather boots</item>
-    <item>ladder</item> 
+    <item>ladder</item>
     <item>bread</item>
     <item>glass bottle</item>
     <item>golden apple</item>
     <item>sign</item>
     <item>chest</item>
     <item>glowstone dust</item>
+    <item>arrow</item>
 </itemremove>
 <hunger>
     <depletion>off</depletion>
 </hunger>
 <killreward>
-    <item>arrow</item>
     <item>golden apple</item>
 </killreward>
 <respawn delay="2s" spectate="true" />
