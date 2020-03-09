@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <map proto="1.4.0">
 <name>Trench Warfare</name>
-<version>0.1</version>
+<version>0.2</version>
 <objective>Capture all trenches, or be the team with most kills after 10 minutes.</objective>
 <authors>
     <author uuid="1379cb6e-f291-4498-9807-e636f9674ac0"/> <!-- SH4D0W_HAWK -->
@@ -301,6 +301,10 @@
         </any>
     </deny>
 </damage>
+<disabledamage>
+    <!-- TNT damages enemies and self, but not teammates -->
+    <damage ally="true" self="false" enemy="false" other="false">block explosion</damage>
+</disabledamage>
 <itemremove>
     <item>potion</item>
     <item>leather helmet</item>
