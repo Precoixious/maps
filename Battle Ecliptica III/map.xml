@@ -2,7 +2,7 @@
 <map proto="1.3.1">
 <include src="tutorial.xml"/>
 <name>Battle Ecliptica III</name>
-<version>1.0.5</version>
+<version>1.0.6</version>
 <objective>Capture the other team's wools to win the game!</objective>
 <authors>
     <author uuid="e37f18f1-117b-47db-8806-6d3a0854b518"/> <!-- chickolympics -->
@@ -77,6 +77,21 @@
         <boots unbreakable="true" color="E5E533">leather boots</boots>
     </kit>
 </kits>
+<block-drops>
+    <rule>
+        <filter>
+            <any>
+                <material>iron block</material>
+            </any>
+        </filter>
+        <drops>
+            <item material="iron helmet"/>
+            <item material="iron chestplate"/>
+            <item material="iron boots"/>
+        </drops>
+    </rule>
+</block-drops>
+
 <regions>
     <rectangle name="all" min="-oo,-oo" max="oo,oo"/>
     <cuboid name="above-20" min="-oo,21,-oo" max="oo,oo,oo"/>
