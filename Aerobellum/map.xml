@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <map proto="1.3.3">
 <name>Aerobellum</name>
-<version>1.0.3</version>
+<version>1.0.4</version>
 <objective>Leak lava from the enemy team's engine to win the match!</objective>
 <authors>
     <author uuid="2a289d2a-d970-49c5-9a6c-01fc0264e317"/> <!-- Stealth5061 -->
@@ -58,7 +58,6 @@
         <item slot="5" amount="32">grilled pork</item>
         <item slot="3" damage="1" amount="32">log</item>
         <item slot="4" amount="8">ladder</item>
-        <item slot="6" unbreakable="true" name="`4`lTNT `7`lDefuser" lore="`7Right click to defuse team griefer's TNT|`7Does not work in `9water`7.|`7Use `a/report `7to alert the staff!">shears</item>
         <item slot="28">arrow</item>
         <potion duration="5" amplifier="10">damage resistance</potion>
         <potion duration="5" amplifier="10">heal</potion>
@@ -84,7 +83,6 @@
     <tool>diamond pickaxe</tool>
     <tool>bow</tool>
     <tool>iron axe</tool>
-    <tool>shears</tool>
 </toolrepair>
 <itemremove>
     <item>arrow</item>

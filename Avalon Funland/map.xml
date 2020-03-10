@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <map proto="1.0.0">
 <name>Avalon Funland</name>
-<version>1.2.4</version>
+<version>1.2.5</version>
 <objective>Destroy the enemy team's core in the center of their Ferris Wheel</objective>
 <authors>
     <author uuid="445da9ac-d32f-4874-86e5-4846d61e02d0"/> <!-- 911chandler -->
@@ -22,7 +22,6 @@
         <item slot="4" amount="64" damage="1">log</item>
         <item slot="5" amount="64">glass</item>
         <item slot="6" amount="2">golden apple</item>
-        <item slot="7" name="`6TNT Defuser" lore="`7Right click to defuse teammate's TNT|`7Does not work in `9water`7!">shears</item>
         <item slot="8" amount="64">cooked chicken</item>
         <potion duration="5" amplifier="3">damage resistance</potion>
     </kit>
@@ -137,7 +136,6 @@
     <item>wood</item>
     <item>glass</item>
     <item>cooked chicken</item>
-    <item>shears</item>
     <item>arrow</item>
 </itemremove>
 <killreward>

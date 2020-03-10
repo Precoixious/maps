@@ -2,7 +2,7 @@
 <map proto="1.3.2">
 <include src="tutorial.xml"/>
 <name>Totally War II</name>
-<version>1.0.6</version>
+<version>1.0.7</version>
 <objective>Destroy and leak both of the enemy team's obsidian core.</objective>
 <authors>
     <author uuid="5986da63-a546-49c5-812d-d5c41a42510a"/> <!-- Lyzak -->
@@ -49,7 +49,6 @@
         <item slot="5" damage="8229">potion</item>
         <item slot="6" damage="8229">potion</item>
         <item slot="7" amount="64">baked potato</item>
-        <item slot="8" name="`6TNT Defuser" lore="`7Right click to defuse teammate's TNT|`7Does not work in `9water`7!">shears</item>
         <chestplate unbreakable="true">iron chestplate</chestplate>
         <leggings unbreakable="true">iron leggings</leggings>
         <boots unbreakable="true">iron boots</boots>
@@ -86,10 +85,10 @@
         </deny>
     </filter>
     <filter name="only-purple">
-        <team>purple</team>  
+        <team>purple</team>
     </filter>
     <filter name="only-red">
-        <team>red</team>  
+        <team>red</team>
     </filter>
     <filter name="anti-grief-red">
         <not>
@@ -201,10 +200,8 @@
     <tool>iron sword</tool>
     <tool>diamond pickaxe</tool>
     <tool>iron axe</tool>
-    <tool>shears</tool>
     <tool>bow</tool>
     <tool>arrow</tool>
-    <tool>shears</tool>
 </toolrepair>
 <itemremove>
     <item>glass bottle</item>

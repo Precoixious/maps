@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <map proto="1.3.6">
 <name>Woodwork Harbor</name>
-<version>1.1.4</version>
+<version>1.1.5</version>
 <objective>Destroy the obsidian core and two endstone monuments on the enemy side to win.</objective>
 <authors>
     <author uuid="e37f18f1-117b-47db-8806-6d3a0854b518"/> <!-- chickolympics -->
@@ -58,7 +58,6 @@
         <item slot="5" amount="64">smooth brick</item>
         <item slot="32" amount="64">smooth brick</item>
         <item slot="6" amount="16">glass</item>
-        <item slot="8" name="`rTNT Defuser - `o(Right Click)">shears</item>
         <potion duration="6">absorption</potion>
         <potion duration="6" amplifier="5">regeneration</potion>
         <potion duration="6" amplifier="3">damage resistance</potion>
@@ -175,11 +174,10 @@
     <item>glass</item>
     <item>smooth brick</item>
     <item>wood</item>
-    <item>shears</item>
     <item>obsidian</item>
     <item>ender stone</item>
     <item>bread</item>
     <item>log</item>
     <item>potion</item>
 </itemremove>
-</map> 
+</map>

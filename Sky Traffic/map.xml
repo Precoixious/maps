@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <map proto="1.0.0">
 <name>Sky Traffic</name>
-<version>1.5.4</version>
+<version>1.5.5</version>
 <objective>Leak lava from the enemy's obsidian core below their ship.</objective>
 <authors>
     <author uuid="459fd919-0d58-401a-9601-6cab1eb721ab"/> <!-- Reshif -->
@@ -129,7 +129,6 @@
         <item slot="1">iron pickaxe</item>
         <item slot="2" amount="8">wood</item>
         <item slot="3" amount="4">cooked fish</item>
-        <item slot="35" name="`6TNT Defuser" lore="`7Right click to defuse teammate's TNT|`7Does not work in `9water`7!">shears</item>
         <chestplate>iron chestplate</chestplate>
         <potion duration="15s" amplifier="2">regeneration</potion>
         <potion duration="5" amplifier="10">heal</potion>
@@ -143,7 +142,6 @@
     <tool>iron pickaxe</tool>
 </toolrepair>
 <itemremove>
-    <item>shears</item>
     <item>iron chestplate</item>
 </itemremove>
 <spawns>

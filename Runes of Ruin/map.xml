@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <map proto="1.0.0">
 <name>Runes of Ruin</name>
-<version>1.1.2</version>
+<version>1.1.3</version>
 <objective>Leak lava from the enemy's obsidian core</objective>
 <authors>
     <author uuid="00c06fa6-1c53-4634-931a-929efd8a52df"/> <!-- Nadastorm -->
@@ -31,7 +31,6 @@
 </spawns>
 <kits>
     <kit name="teams">
-        <item slot="35" name="`6TNT Defuser" lore="`7Right click to defuse teammate's TNT|`7Does not work in `9water`7!">shears</item>
         <potion duration="10" amplifier="2">heal</potion>
     </kit>
 </kits>
@@ -44,9 +43,6 @@
     </filter>
 </filters>
 <maxbuildheight>70</maxbuildheight>
-<itemremove>
-    <item>shears</item>
-</itemremove>
 <regions>
     <apply enter="only-blue" message="You are not allowed in the enemy team's supply room!">
         <cuboid min="415,10,675" max="430,16,697"/>

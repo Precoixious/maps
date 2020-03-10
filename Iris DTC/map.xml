@@ -2,7 +2,7 @@
 <map proto="1.3.2">
 <include src="tutorial.xml"/>
 <name>Iris DTC</name>
-<version>1.7.2</version>
+<version>1.7.3</version>
 <objective>Leak the lava contained inside the opposing teams core to the void.</objective>
 <authors>
     <author uuid="3a549b18-08ed-4756-a78c-b34d29a4fd87"/> <!-- Torn_Ares -->
@@ -17,9 +17,8 @@
     </kit>
     <kit name="teams">
         <item slot="0">diamond pickaxe</item>
-        <item slot="1" name="`rTNT Defuser - `o(Right Click)">shears</item>
-        <item slot="2" damage="2" amount="8">wood</item>
-        <item slot="3" amount="6">cooked fish</item>
+        <item slot="1" damage="2" amount="8">wood</item>
+        <item slot="2" amount="6">cooked fish</item>
     </kit>
     <kit name="red" parents="teams">
         <helmet enchantment="protection explosions:3" color="993333">leather helmet</helmet>
@@ -85,7 +84,6 @@
     <item>obsidian</item>
     <item>gold block</item>
     <item>glass</item>
-    <item>shears</item>
 </itemremove>
 <toolrepair>
     <tool>diamond pickaxe</tool>

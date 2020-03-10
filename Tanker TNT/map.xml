@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <map proto="1.3.2">
 <name>Tanker TNT</name>
-<version>1.3</version>
+<version>1.3.1</version>
 <objective>
     Leak lava from the enemy's obsidian cores.
 </objective>
@@ -23,7 +23,6 @@
         <item slot="5" amount="32">glass</item>
         <item slot="6" amount="64">cooked fish</item>
         <item slot="7" amount="2">golden apple</item>
-        <item slot="8" name="`6TNT Defuser" lore="`7Right click to defuse teammate's TNT|`7Does not work in `9water`7!">shears</item>
         <item slot="13" amount="8">stone button</item>
         <item slot="14" amount="16">stone plate</item>
         <item slot="15" amount="16">fence</item>
@@ -61,7 +60,7 @@
         <team>blue</team>
     </filter>
     <filter name="only-red">
-        <team>red</team>    
+        <team>red</team>
     </filter>
     <filter name="deny-void">
         <deny>
@@ -80,7 +79,7 @@
     </apply>
     <apply block="deny-players" message="You are not allowed to build in your spawn">
         <union name="red-spawn-ship">
-            <cylinder name="red-ship" base="2007,0,-1871" radius="30" height="oo"/> 
+            <cylinder name="red-ship" base="2007,0,-1871" radius="30" height="oo"/>
         </union>
     </apply>
     <apply enter="only-red" message="You may not enter the enemy spawn!">
@@ -130,7 +129,6 @@
     <item>leather chestplate</item>
     <item>leather boots</item>
     <item>arrow</item>
-    <item>shears</item>
     <item>redstone block</item>
     <item>stone button</item>
     <item>stone plate</item>
