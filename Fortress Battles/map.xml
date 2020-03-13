@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <map proto="1.3.3">
 <name>Fortress Battles</name>
-<version>3.0.11</version>
+<version>3.0.12</version>
 <objective>Leak lava from the enemy's obsidian core into the void.</objective>
 <rules>
     <rule>You cannot place dispensers on the map!</rule>
@@ -56,6 +56,9 @@
     </apply>
     <apply enter="deny-all" message="You may not enter spawns">
         <rectangle min="1301,547" max="1234,517"/>
+    </apply>
+    <apply enter="deny-all" message="You may not enter the observer spawn">
+        <circle center="1267.5,518.5" radius="16"/>
     </apply>
 </regions>
 <crafting>
