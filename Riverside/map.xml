@@ -2,7 +2,7 @@
 <map proto="1.3.0">
 <include src="tutorial.xml"/>
 <name>Riverside</name>
-<version>1.0.1</version>
+<version>1.0.2</version>
 <objective>Destroy enemy team's obsidian monument!</objective>
 <authors>
     <author uuid="105f6a09-f533-412b-93cb-501601763c11"/> <!-- JTerwiesch -->
@@ -94,6 +94,7 @@
     <item>leather leggings</item>
     <item>leather boots</item>
     <item>bread</item>
+    <item>arrow</item>
 </itemremove>
 <destroyables materials="obsidian">
     <destroyable name="Monument" owner="blue">
