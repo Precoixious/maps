@@ -2,7 +2,7 @@
 <map proto="1.3.0">
 <include src="tutorial.xml"/>
 <name>Riverside</name>
-<version>1.0.0</version>
+<version>1.0.1</version>
 <objective>Destroy enemy team's obsidian monument!</objective>
 <authors>
     <author uuid="105f6a09-f533-412b-93cb-501601763c11"/> <!-- JTerwiesch -->
@@ -14,19 +14,20 @@
     <team color="dark red" max="50">Red</team>
 </teams>
 <timelock>on</timelock>
-    <spawns>
-        <spawns safe="true">
-            <spawn team="blue" kit="blue" yaw="135">
-                <cylinder base="37,24,288" radius="1" height="2"/>
-            </spawn>
-            <spawn team="red" kit="red" yaw="-45">
-                <cylinder base="-71,24,113" radius="3" height="2"/>
-            </spawn>
-        </spawns>
-        <default yaw="-90">
-            <cylinder base="-97.5,36,202" radius="2" height="2"/>
-        </default>
+<maxbuildheight>30</maxbuildheight>
+<spawns>
+    <spawns safe="true">
+        <spawn team="blue" kit="blue" yaw="135">
+            <cylinder base="37,24,288" radius="1" height="2"/>
+        </spawn>
+        <spawn team="red" kit="red" yaw="-45">
+            <cylinder base="-71,24,113" radius="3" height="2"/>
+        </spawn>
     </spawns>
+    <default yaw="-90">
+        <cylinder base="-97.5,36,202" radius="2" height="2"/>
+    </default>
+</spawns>
 <kits>
     <kit name="spawn">
         <item slot="0">stone sword</item>
