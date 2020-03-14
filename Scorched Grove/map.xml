@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <map proto="1.3.0">
 <name>Scorched Grove</name>
-<version>1.1.4</version>
+<version>1.1.5</version>
 <objective>Destroy the enemy team's obsidian monument!</objective>
 <authors>
     <author uuid="c97373ef-4582-4350-8993-8a78f2775c29" contribution="Main Building and Initial Concept"/> <!-- Eclipsen -->
@@ -11,7 +11,7 @@
     <contributor uuid="90e029a3-6873-46a7-8430-0ec3dbc42aba" contribution="Asethetics and Buildings"/> <!-- SajinZero -->
     <contributor uuid="4a0780d3-d9c4-41c4-a816-e077a36f27c9" contribution="Gameplay Feedback"/> <!-- Kasicrafter -->
     <contributor uuid="e39fe3bc-b80e-46d2-81fe-d18042471989" contribution="Aesthetics"/> <!-- EnarRikardz -->
-    <contributor contribution="Inspiration Source">Tijn1117</contributor>
+    <contributor uuid="e90c0ec3-5d35-4ef1-8d03-1cd62cc9ba09" contribution="Inspiration Source"/> <!-- Tijn1117 -->
     <contributor uuid="a9a67a42-e298-4535-97ab-3c0e4c400989" contribution="Inspiration Source"/> <!-- MattyKingSam -->
     <contributor uuid="a348a860-8c8b-475f-b793-d556d45252a7" contribution="Concept Development and Moral Support"/> <!-- i2 -->
 </contributors>
@@ -40,8 +40,8 @@
         <item slot="2">diamond pickaxe</item>
         <item slot="3">stone axe</item>
         <item slot="4" amount="48">wood</item>
-        <item slot="5" amount="32">cooked fish</item> 
-        <item slot="6" amount="16">torch</item> 
+        <item slot="5" amount="32">cooked fish</item>
+        <item slot="6" amount="16">torch</item>
         <item slot="28" amount="1">arrow</item>
         <potion duration="3">heal</potion>
         <potion duration="7">damage resistance</potion>
@@ -164,15 +164,18 @@
     </destroyables>
 </destroyables>
 <itemremove>
-    <item>stone sword</item>
-    <item>diamond pickaxe</item>
-    <item>stone axe</item>
     <item>obsidian</item>
     <item>flint</item>
     <item>apple</item>
+    <item>wood</item>
+    <item>cooked fish</item>
+    <item>torch</item>
+    <item>arrow</item>
 </itemremove>
 <toolrepair>
-    <tool>iron sword</tool>
+    <tool>stone sword</tool>
     <tool>bow</tool>
+    <tool>diamond pickaxe</tool>
+    <tool>stone axe</tool>
 </toolrepair>
 </map>
