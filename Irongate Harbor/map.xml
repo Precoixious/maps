@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <map proto="1.3.5">
 <name>Irongate Harbor</name>
-<version>1.0.1</version>
+<version>1.0.2</version>
 <objective>Destroy the enemy's two monuments</objective>
 <phase>development</phase>
 <authors>
@@ -28,8 +28,7 @@
         <item slot="3">iron axe</item>
         <item slot="4" amount="64">cooked fish</item>
         <item slot="5" amount="64">wood</item>
-        <item slot="25" amount="64">arrow</item>
-        <item slot="26" amount="64">arrow</item>
+        <item slot="28" amount="64">arrow</item>
         <potion duration="7" amplifier="1">heal</potion>
     </kit>
     <kit name="blue" parents="spawn">
@@ -81,7 +80,7 @@
     </apply>
     <apply block="no-void" message="You may not build in the void.">
         <negative>
-            <cuboid min="-999,0,-999" max="-998,1,-998"/>   
+            <cuboid min="-999,0,-999" max="-998,1,-998"/>
         </negative>
     </apply>
 </regions>
@@ -102,17 +101,21 @@
             <cuboid min="36,47,32" max="37,51,33"/>
         </destroyable>
     </destroyables>
-</destroyables> 
+</destroyables>
 <mobs>
     <filter>
         <mob>horse</mob>
     </filter>
 </mobs>
+<killreward>
+    <item amount="16">arrow</item>
+</killreward>
 <itemremove>
     <item>leather chestplate</item>
     <item>flint</item>
     <item>obsidian</item>
     <item>cooked fish</item>
+    <item>arrow</item>
 </itemremove>
 <toolrepair>
     <tool>stone sword</tool>
