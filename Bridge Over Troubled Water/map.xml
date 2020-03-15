@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <map proto="1.0.0">
 <name>Bridge Over Troubled Water</name>
-<version>1.1.4</version>
+<version>1.1.5</version>
 <objective>Make the opposing team's core leak.</objective>
 <authors>
     <author uuid="c97373ef-4582-4350-8993-8a78f2775c29" contribution="map design"/> <!-- Eclipsen -->
@@ -83,11 +83,12 @@
         <item slot="0">iron sword</item>
         <item slot="1" enchantment="infinity">bow</item>
         <item slot="2" enchantment="efficiency:2">iron pickaxe</item>
-        <item slot="3" enchantment="knockback:2">wood sword</item>
-        <item slot="4" amount="64" damage="2">log</item>
-        <item slot="5" amount="64">stone</item>
-        <item slot="6">diamond pickaxe</item>
-        <item slot="7" amount="16">cooked fish</item>
+        <item slot="3">iron axe</item>
+        <item slot="4" enchantment="knockback:2">wood sword</item>
+        <item slot="5" amount="64" damage="2">log</item>
+        <item slot="6" amount="64">stone</item>
+        <item slot="7">diamond pickaxe</item>
+        <item slot="8" amount="16">cooked fish</item>
         <item slot="28">arrow</item>
     </kit>
 </kits>
@@ -97,6 +98,7 @@
     <tool>iron pickaxe</tool>
     <tool>diamond pickaxe</tool>
     <tool>wood sword</tool>
+    <tool>iron axe</tool>
 </toolrepair>
 <itemremove>
     <item>obsidian</item>
