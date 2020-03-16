@@ -1,6 +1,6 @@
 <map proto="1.3.2">
 <name>Royal Garden CTW</name>
-<version>1.5.4</version>
+<version>1.5.5</version>
 <objective>Capture the opposing team's wool and place it at your victory monument.</objective>
 <authors>
     <author uuid="621b2aa8-4e5f-4ed8-bd36-0ae2f8952a06"/> <!-- thestrangeboy1 -->
@@ -170,6 +170,5 @@
     <item>arrow</item>
     <item>golden apple</item>
     <item>ladder</item>
-    <item>flint</item>
 </itemremove>
 </map>
