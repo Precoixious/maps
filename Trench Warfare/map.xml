@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <map proto="1.4.0">
 <name>Trench Warfare</name>
-<version>0.2</version>
+<version>0.3</version>
 <objective>Capture all trenches, or be the team with most kills after 10 minutes.</objective>
 <authors>
     <author uuid="1379cb6e-f291-4498-9807-e636f9674ac0"/> <!-- SH4D0W_HAWK -->
@@ -25,9 +25,11 @@
 </hunger>
 <timelock>on</timelock>
 <maxbuildheight>80</maxbuildheight>
+<!-- We want fire to spread when engineers build.
 <gamerules>
     <doFireTick>false</doFireTick>
 </gamerules>
+-->
 <broadcasts>
     <tip every="2m" after="2s" count="oo">`3Switch class by `bright clicking`3 the `bsigns`3 left and right of spawn!</tip>
     <tip every="2m" after="2s" count="oo" filter="only-cannoneer">`3Use your `bTNT`3 in the `bcannons`3 above spawn!</tip>
@@ -65,6 +67,13 @@
         <kit>
             <item slot="0" unbreakable="true" material="iron sword"/>
             <item slot="1" amount="16" material="egg"/>
+            <item slot="2" amount="16" material="egg"/>
+            <item slot="3" amount="16" material="egg"/>
+            <item slot="4" amount="16" material="egg"/>
+            <item slot="5" amount="16" material="egg"/>
+            <item slot="6" amount="16" material="egg"/>
+            <item slot="7" amount="16" material="egg"/>
+            <item slot="8" amount="16" material="egg"/>
             <helmet material="diamond helmet" unbreakable="true"/>
             <chestplate material="iron chestplate" unbreakable="true"/>
             <leggings material="iron leggings" unbreakable="true"/>
@@ -74,8 +83,10 @@
     <class name="Demoman" description="Specializes in high explosive materials." icon="sulphur">
         <kit>
             <item slot="0" unbreakable="true" material="stone sword"/>
-            <item slot="1" name="TNT" projectile="gun" material="tnt" amount="8"/>
+            <item slot="1" name="TNT" projectile="gun" material="tnt" amount="32"/>
             <item slot="2" damage="16396" amount="5" material="potion"/> <!-- splash potion of harming -->
+            <item slot="3" damage="16396" amount="5" material="potion"/> <!-- splash potion of harming -->
+            <item slot="4" damage="16396" amount="5" material="potion"/> <!-- splash potion of harming -->
             <helmet material="iron helmet" enchantment="blast_protection:4" unbreakable="true"/>
             <chestplate material="iron chestplate" enchantment="blast_protection:4" unbreakable="true"/>
             <leggings material="iron leggings" enchantment="blast_protection:4" unbreakable="true"/>
@@ -84,19 +95,18 @@
     </class>
     <class name="Scout" description="A class good for a quick trench capture." icon="feather">
         <kit>
-            <item slot="0" enchantment="knockback" unbreakable="true" material="wood sword"/>
+            <item slot="0" enchantment="knockback;sharpness:3" unbreakable="true" material="wood sword"/>
             <item slot="1" enchantment="efficiency" unbreakable="true" material="stone axe"/>
             <chestplate material="iron chestplate" unbreakable="true"/>
             <leggings material="leather leggings" unbreakable="true"/>
-            <effect duration="oo" amplifier="2">speed</effect>
+            <effect duration="oo" amplifier="3">speed</effect>
+            <effect duration="oo" amplifier="4">jump</effect>
         </kit>
     </class>
     <class name="Pyro" description="A unit that specializes in fire." icon="flint and steel">
         <kit>
             <item slot="0" enchantment="fire aspect:2" unbreakable="true" material="stone sword"/>
-            <item slot="1" enchantment="flame;infinity" unbreakable="true" material="bow"/>
-            <item slot="2" material="flint and steel"/>
-            <item slot="28" material="arrow"/>
+            <item slot="1" material="flint and steel"/>
             <helmet material="chainmail helmet" enchantment="fire_protection:3" unbreakable="true"/>
             <chestplate material="chainmail chestplate" enchantment="fire_protection:3" unbreakable="true"/>
             <leggings material="chainmail leggings" enchantment="fire_protection:3" unbreakable="true"/>
@@ -105,7 +115,7 @@
     </class>
     <class name="Assassin" description="Able to move quickly, high damage, but low armor." icon="diamond sword">
         <kit>
-            <item slot="0" enchantment="sharpness" unbreakable="true" material="iron sword"/>
+            <item slot="0" enchantment="sharpness:3" unbreakable="true" material="iron sword"/>
             <item slot="1" enchantment="sharpness:10" damage="1651" material="diamond sword"/>
             <helmet material="gold helmet" unbreakable="true"/>
             <boots material="leather boots" unbreakable="true"/>
@@ -118,10 +128,12 @@
             <item slot="1" damage="8238">potion</item> <!-- potion of invisibility -->
             <item slot="2" damage="8238">potion</item> <!-- potion of invisibility -->
             <item slot="3" damage="8238">potion</item> <!-- potion of invisibility -->
+                <!-- Spy should probably not have armor
             <helmet material="iron helmet" unbreakable="true"/>
             <chestplate material="leather chestplate" unbreakable="true"/>
             <leggings material="gold leggings" unbreakable="true"/>
             <boots material="chainmail boots" unbreakable="true"/>
+                -->
             <effect duration="oo">speed</effect>
         </kit>
     </class>
@@ -130,10 +142,10 @@
     <class name="Heavy" description="A class with good armor and deals high damage but slow movement speed." icon="diamond helmet">
         <kit>
             <item slot="0" unbreakable="true" material="diamond sword"/>
-            <helmet material="diamond helmet" enchantment="protection" unbreakable="true"/>
-            <chestplate material="diamond chestplate" enchantment="protection" unbreakable="true"/>
-            <leggings material="diamond leggings" enchantment="protection" unbreakable="true"/>
-            <boots material="diamond boots" enchantment="protection" unbreakable="true"/>
+            <helmet material="diamond helmet" unbreakable="true"/>
+            <chestplate material="diamond chestplate" unbreakable="true"/>
+            <leggings material="diamond leggings" unbreakable="true"/>
+            <boots material="diamond boots" unbreakable="true"/>
             <effect duration="oo" amplifier="2">slowness</effect>
         </kit>
     </class>
@@ -163,7 +175,7 @@
     <class name="Sniper" description="A unit equiped with a bow but has low armor." icon="bow">
         <kit>
             <item slot="0" unbreakable="true" material="stone sword"/>
-            <item slot="1" enchantment="infinity;power:2" unbreakable="true" material="bow"/>
+            <item slot="1" enchantment="infinity;power:2;punch" unbreakable="true" material="bow"/>
             <item slot="28" material="arrow"/>
             <helmet material="chainmail helmet" unbreakable="true"/>
             <chestplate material="leather chestplate" unbreakable="true"/>
@@ -174,18 +186,40 @@
     <class name="Medic" description="Able to heal friendly units, but make enemy units weak." icon="golden apple">
         <kit>
             <item slot="0" unbreakable="true" material="stone sword"/>
+                <!-- Hotbar -->
             <item slot="1" damage="16389" amount="8" material="potion"/>
             <item slot="2" damage="16389" amount="8" material="potion"/>
             <item slot="3" damage="16389" amount="8" material="potion"/>
             <item slot="4" damage="16389" amount="8" material="potion"/>
             <item slot="5" damage="16389" amount="8" material="potion"/>
             <item slot="6" damage="16389" amount="8" material="potion"/>
-            <!-- Healing pots seems to have made enemies weak, so let's give weakness potions instead -->
+                <!-- 2nd row -->
+            <item slot="28" damage="16389" amount="4" material="potion"/>
+            <item slot="29" damage="16389" amount="4" material="potion"/>
+            <item slot="30" damage="16389" amount="4" material="potion"/>
+            <item slot="31" damage="16389" amount="4" material="potion"/>
+            <item slot="32" damage="16389" amount="4" material="potion"/>
+            <item slot="33" damage="16389" amount="4" material="potion"/>
+                <!-- 3rd row -->
+            <item slot="19" damage="16389" amount="4" material="potion"/>
+            <item slot="20" damage="16389" amount="4" material="potion"/>
+            <item slot="21" damage="16389" amount="4" material="potion"/>
+            <item slot="22" damage="16389" amount="4" material="potion"/>
+            <item slot="23" damage="16389" amount="4" material="potion"/>
+            <item slot="24" damage="16389" amount="4" material="potion"/>
+                <!-- Healing pots seems to have made enemies weak, so let's give weakness potions instead -->
+                <!-- Hotbar -->
             <item slot="7" damage="16424" amount="4" material="potion"/>
             <item slot="8" damage="16424" amount="4" material="potion"/>
-            <helmet material="gold helmet" unbreakable="true"/>
+                <!-- 2nd row -->
+            <item slot="34" damage="16424" amount="2" material="potion"/>
+            <item slot="35" damage="16424" amount="2" material="potion"/>
+                <!-- 3rd row -->
+            <item slot="25" damage="16424" amount="2" material="potion"/>
+            <item slot="26" damage="16424" amount="2" material="potion"/>
+            <helmet material="iron helmet" unbreakable="true"/>
             <chestplate material="gold chestplate" unbreakable="true"/>
-            <leggings material="gold leggings" unbreakable="true"/>
+            <leggings material="iron leggings" unbreakable="true"/>
             <boots material="gold boots" unbreakable="true"/>
         </kit>
     </class>
@@ -268,17 +302,17 @@
     <apply block="never" region="playable-inverse"/>
 </regions>
 <control-points incremental="true" show-progress="true" required="false">
-    <control-point name="East Trench" capture-time="20s">
+    <control-point name="East Trench" capture-time="10s">
         <capture><cuboid min="22,62,-7" max="26,69,9"/></capture>
         <progress><cuboid min="21,67,-7" max="27,68,9"/></progress>
         <captured><cuboid min="22,62,-7" max="26,69,9"/></captured>
     </control-point>
-    <control-point name="Middle Trench" capture-time="30s" points="1.25">
+    <control-point name="Middle Trench" capture-time="15s" points="1.25">
         <capture><cuboid min="-2,62,-7" max="2,69,9"/></capture>
         <progress><cuboid min="-3,66,-7" max="3,67,9"/></progress>
         <captured><cuboid min="-2,62,-7" max="2,69,9"/></captured>
     </control-point>
-    <control-point name="West Trench" capture-time="20s">
+    <control-point name="West Trench" capture-time="10s">
         <capture><cuboid min="-26,62,-7" max="-22,69,9"/></capture>
         <progress><cuboid min="-27,67,-7" max="-21,68,9"/></progress>
         <captured><cuboid min="-26,62,-7" max="-22,69,9"/></captured>
@@ -292,7 +326,7 @@
         velocity="0.3"
         damage="20"
         throwable="true"
-        cooldown="5s"
+        cooldown="1s"
         click="right"/>
 </projectiles>
 <tnt>
@@ -364,6 +398,7 @@
     <item>watch</item>
     <item>fireball</item>
     <item>snow ball</item>
+    <item>wood step</item>
 </itemremove>
 <killreward>
     <item name="Health Kit">golden apple</item>
