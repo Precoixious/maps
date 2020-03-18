@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <map proto="1.3.0">
 <name>Scorched Grove</name>
-<version>1.1.5</version>
+<version>1.1.6</version>
 <objective>Destroy the enemy team's obsidian monument!</objective>
 <authors>
     <author uuid="c97373ef-4582-4350-8993-8a78f2775c29" contribution="Main Building and Initial Concept"/> <!-- Eclipsen -->
@@ -167,7 +167,6 @@
     <item>obsidian</item>
     <item>flint</item>
     <item>apple</item>
-    <item>wood</item>
     <item>cooked fish</item>
     <item>torch</item>
     <item>arrow</item>
