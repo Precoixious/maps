@@ -1,7 +1,7 @@
 <map proto="1.3.6">
 <include src="tutorial.xml"/>
 <name>Citadel</name>
-<version>1.3.1</version>
+<version>1.3.2</version>
 <objective>
     Attackers must capture the wool before the time limit of 13 minutes runs out
 </objective>
@@ -16,8 +16,8 @@
     <contributor uuid="75fd93dd-8e48-4698-81a2-97dae2ec5b5f"/> <!-- Pugzy -->
 </contributors>
 <teams>
-    <team id="attackers" color="dark red" max="15" max-overfill="17" plural="true">Attackers</team>
-    <team id="defenders" color="blue" max="17" max-overfill="20" plural="true">Defenders</team>
+    <team id="attackers" color="dark red" max="17" max-overfill="20" plural="true">Attackers</team>
+    <team id="defenders" color="blue" max="15" max-overfill="17" plural="true">Defenders</team>
 </teams>
 <spawns>
     <default>
@@ -296,7 +296,7 @@
     <fuse>2s</fuse>
     <yield>0.1</yield>
 </tnt>
-<time result="defenders">810s</time>
+<time result="defenders">15m</time>
 <gamerules>
     <doFireTick>false</doFireTick>
 </gamerules>
