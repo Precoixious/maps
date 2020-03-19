@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <map proto="1.4.0">
 <name>Trench Warfare</name>
-<version>0.3</version>
+<version>0.4</version>
 <objective>Capture all trenches, or be the team with most kills after 10 minutes.</objective>
 <authors>
     <author uuid="1379cb6e-f291-4498-9807-e636f9674ac0"/> <!-- SH4D0W_HAWK -->
@@ -95,8 +95,8 @@
     </class>
     <class name="Scout" description="A class good for a quick trench capture." icon="feather">
         <kit>
-            <item slot="0" enchantment="knockback;sharpness:3" unbreakable="true" material="wood sword"/>
-            <item slot="1" enchantment="efficiency" unbreakable="true" material="stone axe"/>
+            <item slot="0" enchantment="knockback:2;sharpness:3" unbreakable="true" material="wood sword"/>
+            <item slot="1" enchantment="efficiency:2" unbreakable="true" material="stone axe"/>
             <chestplate material="iron chestplate" unbreakable="true"/>
             <leggings material="leather leggings" unbreakable="true"/>
             <effect duration="oo" amplifier="3">speed</effect>
@@ -105,20 +105,20 @@
     </class>
     <class name="Pyro" description="A unit that specializes in fire." icon="flint and steel">
         <kit>
-            <item slot="0" enchantment="fire aspect:2" unbreakable="true" material="stone sword"/>
+            <item slot="0" enchantment="fire aspect:3;sharpness" unbreakable="true" material="stone sword"/>
             <item slot="1" material="flint and steel"/>
             <helmet material="chainmail helmet" enchantment="fire_protection:3" unbreakable="true"/>
-            <chestplate material="chainmail chestplate" enchantment="fire_protection:3" unbreakable="true"/>
+            <chestplate material="chainmail chestplate" enchantment="fire_protection:3;protection" unbreakable="true"/>
             <leggings material="chainmail leggings" enchantment="fire_protection:3" unbreakable="true"/>
             <boots material="chainmail boots" enchantment="fire_protection:3" unbreakable="true"/>
         </kit>
     </class>
     <class name="Assassin" description="Able to move quickly, high damage, but low armor." icon="diamond sword">
         <kit>
-            <item slot="0" enchantment="sharpness:3" unbreakable="true" material="iron sword"/>
-            <item slot="1" enchantment="sharpness:10" damage="1651" material="diamond sword"/>
-            <helmet material="gold helmet" unbreakable="true"/>
-            <boots material="leather boots" unbreakable="true"/>
+            <item slot="0" enchantment="sharpness:4" unbreakable="true" material="iron sword"/>
+            <item slot="1" enchantment="sharpness:15" damage="1651" material="diamond sword"/>
+            <helmet material="gold helmet" enchantment="protection" unbreakable="true"/>
+            <boots material="leather boots" enchantment="protection" unbreakable="true"/>
             <effect duration="oo" amplifier="2">speed</effect>
         </kit>
     </class>
@@ -141,18 +141,18 @@
     <!-- Defensive classes -->
     <class name="Heavy" description="A class with good armor and deals high damage but slow movement speed." icon="diamond helmet">
         <kit>
-            <item slot="0" unbreakable="true" material="diamond sword"/>
-            <helmet material="diamond helmet" unbreakable="true"/>
-            <chestplate material="diamond chestplate" unbreakable="true"/>
-            <leggings material="diamond leggings" unbreakable="true"/>
-            <boots material="diamond boots" unbreakable="true"/>
+            <item slot="0" unbreakable="true" material="iron sword"/>
+            <helmet material="diamond helmet" enchantment="protection" unbreakable="true"/>
+            <chestplate material="diamond chestplate" enchantment="protection" unbreakable="true"/>
+            <leggings material="diamond leggings" enchantment="protection" unbreakable="true"/>
+            <boots material="diamond boots" enchantment="protection" unbreakable="true"/>
             <effect duration="oo" amplifier="2">slowness</effect>
         </kit>
     </class>
     <class name="Engineer" description="Can create defenses on the map to provide cover." icon="wood">
         <kit>
             <item slot="0" unbreakable="true" material="iron axe"/>
-            <item slot="1" unbreakable="true" material="shears"/>
+            <item slot="1" unbreakable="true" enchantment="efficiency" material="shears"/>
             <item slot="2" amount="32" material="wood"/>
             <item slot="3" amount="16" material="web"/>
             <helmet material="chainmail helmet" unbreakable="true"/>
@@ -187,12 +187,12 @@
         <kit>
             <item slot="0" unbreakable="true" material="stone sword"/>
                 <!-- Hotbar -->
-            <item slot="1" damage="16389" amount="8" material="potion"/>
-            <item slot="2" damage="16389" amount="8" material="potion"/>
-            <item slot="3" damage="16389" amount="8" material="potion"/>
-            <item slot="4" damage="16389" amount="8" material="potion"/>
-            <item slot="5" damage="16389" amount="8" material="potion"/>
-            <item slot="6" damage="16389" amount="8" material="potion"/>
+            <item slot="1" damage="16389" amount="4" material="potion"/>
+            <item slot="2" damage="16389" amount="4" material="potion"/>
+            <item slot="3" damage="16389" amount="4" material="potion"/>
+            <item slot="4" damage="16389" amount="4" material="potion"/>
+            <item slot="5" damage="16389" amount="4" material="potion"/>
+            <item slot="6" damage="16389" amount="4" material="potion"/>
                 <!-- 2nd row -->
             <item slot="28" damage="16389" amount="4" material="potion"/>
             <item slot="29" damage="16389" amount="4" material="potion"/>
@@ -293,6 +293,12 @@
         <cuboid id="blue-cannon2" min="-72,74,2" max="-63,77,0"/>
         <cuboid id="blue-cannon3" min="-69,74,6" max="-65,78,7"/>
     </union>
+    <union id="trenches">
+        <cuboid min="22,62,-7" max="26,69,9"/>
+        <cuboid min="-2,62,-7" max="2,69,9"/>
+        <cuboid min="-26,62,-7" max="-22,69,9"/>
+    </union>
+    <apply block="never" region="trenches" message="You may not build inside the trenches!"/>
     <apply enter="only-red" region="red-base-area" message="Only red can enter this area!"/>
     <apply enter="only-blue" region="blue-base-area" message="Only blue can enter this area!"/>
     <apply block="only-tnt" region="cannons"/>
