@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <map proto="1.4.0">
 <name>Trench Warfare</name>
-<version>0.4</version>
+<version>0.5</version>
 <objective>Capture all trenches, or be the team with most kills after 10 minutes.</objective>
 <authors>
     <author uuid="1379cb6e-f291-4498-9807-e636f9674ac0"/> <!-- SH4D0W_HAWK -->
@@ -330,9 +330,9 @@
         name="gun"
         projectile="TNTPrimed"
         velocity="0.3"
-        damage="20"
+        damage="10"
         throwable="true"
-        cooldown="1s"
+        cooldown="2s"
         click="right"/>
 </projectiles>
 <tnt>
