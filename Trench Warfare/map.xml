@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <map proto="1.4.0">
 <name>Trench Warfare</name>
-<version>0.5</version>
+<version>0.6</version>
 <objective>Capture all trenches, or be the team with most kills after 10 minutes.</objective>
 <authors>
     <author uuid="1379cb6e-f291-4498-9807-e636f9674ac0"/> <!-- SH4D0W_HAWK -->
@@ -33,6 +33,7 @@
 <broadcasts>
     <tip every="2m" after="2s" count="oo">`3Switch class by `bright clicking`3 the `bsigns`3 left and right of spawn!</tip>
     <tip every="2m" after="2s" count="oo" filter="only-cannoneer">`3Use your `bTNT`3 in the `bcannons`3 above spawn!</tip>
+    <tip every="2m" after="2s" count="oo" filter="only-spy">`3As a `bSpy`3, you can't capture the trenches!</tip>
 </broadcasts>
 <teams>
     <team id="blues" color="blue" max="20" max-overfill="24" show-name-tags="allies">Blue</team>
@@ -266,6 +267,12 @@
     <any id="only-cannoneer">
         <class>cannoneer</class>
     </any>
+    <any id="only-spy">
+        <class>spy</class>
+    </any>
+    <not id="not-spy">
+        <class>spy</class>
+    </not>
 </filters>
 <regions>
     <negative id="playable-inverse">
@@ -307,7 +314,7 @@
     <apply block="break-restrictions" region="main-area" message="You may not break this block!"/>
     <apply block="never" region="playable-inverse"/>
 </regions>
-<control-points incremental="true" show-progress="true" required="false">
+<control-points incremental="true" show-progress="true" required="false" capture-filter="not-spy">
     <control-point name="East Trench" capture-time="10s">
         <capture><cuboid min="22,62,-7" max="26,69,9"/></capture>
         <progress><cuboid min="21,67,-7" max="27,68,9"/></progress>
