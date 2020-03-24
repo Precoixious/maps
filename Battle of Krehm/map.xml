@@ -101,7 +101,7 @@
     <tool>diamond pickaxe</tool>
     <tool>stone axe</tool>
     <tool>stone spade</tool>
-    <item>stone sword</item>
+    <tool>stone sword</tool>
 </toolrepair>
 <itemremove>
     <item>arrow</item>
