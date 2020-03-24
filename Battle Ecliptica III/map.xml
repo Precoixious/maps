@@ -2,7 +2,7 @@
 <map proto="1.3.1">
 <include src="tutorial.xml"/>
 <name>Battle Ecliptica III</name>
-<version>1.0.6</version>
+<version>1.0.7</version>
 <objective>Capture the other team's wools to win the game!</objective>
 <authors>
     <author uuid="e37f18f1-117b-47db-8806-6d3a0854b518"/> <!-- chickolympics -->
@@ -77,21 +77,6 @@
         <boots unbreakable="true" color="E5E533">leather boots</boots>
     </kit>
 </kits>
-<block-drops>
-    <rule>
-        <filter>
-            <any>
-                <material>iron block</material>
-            </any>
-        </filter>
-        <drops>
-            <item material="iron helmet"/>
-            <item material="iron chestplate"/>
-            <item material="iron boots"/>
-        </drops>
-    </rule>
-</block-drops>
-
 <regions>
     <rectangle name="all" min="-oo,-oo" max="oo,oo"/>
     <cuboid name="above-20" min="-oo,21,-oo" max="oo,oo,oo"/>
@@ -133,6 +118,10 @@
         <region name="all"/>
         <region name="wool-placements"/>
     </complement>
+    <complement name="iron-only-region">
+        <region name="spawns"/>
+        <region name="wool-placements"/>
+    </complement>
     <!-- Applied -->
     <apply use="deny-beacon" block="deny-obsidian deny-spawner" message="`7This block is disabled on this map!">
         <region name="all"/>
@@ -146,12 +135,7 @@
     <apply block="deny-all" message="`7You may not edit above the height limit! (`c20 Blocks`7)">
         <region name="above-20"/>
     </apply>
-    <apply block-place="deny-all" block-break="only-iron allow-leaves" message="`7You may only break the `6iron blocks `7at spawn!">
-        <complement>
-            <region name="spawns"/>
-            <region name="wool-placements"/>
-        </complement>
-    </apply>
+    <apply region="iron-only-region" block-break="only-iron allow-leaves" block-place="no-teams" message="`7You may only break the `6iron blocks `7at spawn!"/>
     <apply enter="deny-red" message="`7You may not enter your own wool room!">
         <region name="red-wool-room"/>
     </apply>
@@ -216,6 +200,16 @@
             <team>yellow</team>
         </deny>
     </filter>
+    <filter name="no-teams">
+        <deny>
+            <any>
+                <team>red</team>
+                <team>blue</team>
+                <team>green</team>
+                <team>yellow</team>
+            </any>
+        </deny>
+    </filter>
     <filter name="only-red">
         <team>red</team>
     </filter>
@@ -262,6 +256,12 @@
         </deny>
     </filter>
 </filters>
+<renewables>
+    <renewable interval="2m" grow="true" particles="true" sound="true" avoid-players="2" region="iron-only-region">
+        <renew>iron block</renew>
+        <replace>air</replace>
+    </renewable>
+</renewables>
 <wools team="red">
     <wool color="green">
         <block>1,9,102</block>
