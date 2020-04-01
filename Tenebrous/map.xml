@@ -107,9 +107,9 @@
     </apply>
     <apply enter="green-only" block="green-only no-void" use="only-green-usage" message="You may not enter or modify your own wool rooms!">
         <!--   Blue Room   -->
-        <rectangle min="-70,207" max="-97,223"/>
+        <rectangle min="-70,208" max="-97,223"/>
         <!--   Red Room   -->
-        <rectangle min="39,223" max="68,207"/>
+        <rectangle min="39,223" max="68,208"/>
     </apply>
     <apply block="deny-all" message="You may not mess with the portals!">
         <rectangle min="-4,41" max="-8,25"/>
